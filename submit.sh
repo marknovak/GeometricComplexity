@@ -23,7 +23,7 @@
 #$ -M mark.novak@oregonstate.edu
 
 # generic parallel environment with 1 core(s) requested
-#$ -pe orte 8
+#$ -pe orte 16
 
 # Load a module, if needed
 module load mathematica/12.0
