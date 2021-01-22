@@ -1,0 +1,6 @@
+fixSH = {{233, 3, 5, 2, Indeterminate}, {233, 3, 5, 3, Indeterminate}, 
+     {233, 3, 6, 2, Indeterminate}, {233, 3, 6, 3, Indeterminate}, 
+     {233, 3, 7, 2, Indeterminate}, {233, 3, 7, 3, Indeterminate}, 
+     {233, 3, 8, 2, Indeterminate}, {233, 3, 8, 3, Indeterminate}, 
+     {233, 3, 9, 2, Indeterminate}, {233, 3, 9, 3, Indeterminate}, 
+     {233, 3, 10, 2, Indeterminate}, {233, 3, 10, 3, Indeterminate}}
