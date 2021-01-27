@@ -10,139 +10,54 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17039,        409]
-NotebookOptionsPosition[     16431,        390]
-NotebookOutlinePosition[     16857,        407]
-CellTagsIndexPosition[     16814,        404]
+NotebookDataLength[     15578,        347]
+NotebookOptionsPosition[     14846,        325]
+NotebookOutlinePosition[     15272,        342]
+CellTagsIndexPosition[     15229,        339]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"H1", " ", "=", " ", 
-    RowBox[{"a", " ", "\[CapitalNu]", " ", "P", " ", "T"}]}], ";"}], 
-  " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"H2", " ", "=", " ", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", "\[CapitalNu]"}], 
-      RowBox[{"1", "+", 
-       RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}]}]], " ", "P", " ", 
-     "T"}]}], ";"}], " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"SH", " ", "=", " ", 
-   RowBox[{
-    FractionBox[
-     RowBox[{"a", " ", "\[CapitalNu]"}], 
-     RowBox[{"b", "+", 
-      SuperscriptBox["\[CapitalNu]", "2"], " "}]], "P", " ", "T"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"H3R", "=", " ", 
-   RowBox[{
-    FractionBox[
-     RowBox[{"a", " ", 
-      SuperscriptBox["\[CapitalNu]", "n"]}], 
-     RowBox[{"1", "+", 
-      RowBox[{"a", " ", "b", " ", 
-       SuperscriptBox["\[CapitalNu]", "n"]}]}]], " ", "P", " ", "T"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"MH", " ", "=", " ", 
-   RowBox[{
-    FractionBox[
-     RowBox[{"a", " ", "\[CapitalNu]"}], 
-     RowBox[{"b", " ", "+", " ", 
-      RowBox[{"c", " ", "\[CapitalNu]"}], " ", "+", " ", 
-      SuperscriptBox["\[CapitalNu]", "2"], " "}]], " ", "P", " ", "T"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"HLB", " ", "=", " ", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", 
-       SuperscriptBox["\[CapitalNu]", "2"]}], 
-      RowBox[{"1", " ", "+", " ", 
-       RowBox[{"c", " ", "\[CapitalNu]"}], " ", "+", " ", 
-       RowBox[{"a", " ", "b", " ", 
-        SuperscriptBox["\[CapitalNu]", "2"]}]}]], " ", "P", " ", "T"}]}], 
-   ";"}], " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"BD", " ", "=", " ", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", "\[CapitalNu]"}], 
-      RowBox[{"1", "+", 
-       RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}], " ", "+", " ", 
-       RowBox[{"c", " ", 
-        RowBox[{"(", 
-         RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";"}], 
-  " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"SN1", "=", 
-   RowBox[{
-    FractionBox[
-     RowBox[{"a", " ", "\[CapitalNu]", " "}], 
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
      RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}]}], ")"}], 
-       RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"c", " ", 
-          RowBox[{"(", 
-           RowBox[{"P", "-", "1"}], ")"}]}]}], ")"}]}], "-", 
-      RowBox[{"d", " ", "a", " ", "b", " ", "\[CapitalNu]", " ", "c", " ", 
-       RowBox[{"(", 
-        RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<../results/\>\""}], 
+     "}"}], "]"}], "]"}], " "}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"SN2", "=", 
+  RowBox[{"DumpGet", "[", "\"\<Models.mx\>\"", "]"}], " ", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    FractionBox[
-     RowBox[{"a", " ", "\[CapitalNu]", " ", 
-      RowBox[{"(", 
-       RowBox[{"1", "-", "d"}], ")"}], " ", "c", " ", 
-      RowBox[{"(", 
-       RowBox[{"P", "-", "1"}], ")"}]}], 
-     RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}]}], ")"}], 
-       RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"c", " ", 
-          RowBox[{"(", 
-           RowBox[{"P", "-", "1"}], ")"}]}]}], ")"}]}], "-", 
-      RowBox[{"d", " ", "a", " ", "b", " ", "\[CapitalNu]", " ", "c", " ", 
-       RowBox[{"(", 
-        RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+   "Pull", " ", "in", " ", "definitions", " ", "of", " ", "all", " ", "used", 
+    " ", "models"}], " ", "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"models", "=", 
    RowBox[{"{", 
+    RowBox[{"BD", ",", "SN1", ",", "SN2"}], "}"}]}], ";", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
     RowBox[{
-    "H1", ",", "H2", ",", "SH", ",", "H3R", ",", "MH", ",", "HLB", ",", "BD", 
-     ",", "SN1", ",", "SN2"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"models", "=", 
-    RowBox[{"{", "H3R", "}"}]}], ";"}], "\[IndentingNewLine]", 
+    "Use", " ", "to", " ", "restrict", " ", "to", " ", "focal", " ", "model", 
+     
+     RowBox[{
+      RowBox[{"(", "s", ")"}], ".", "  ", "To"}], " ", "see", " ", "all"}], 
+    ",", " ", 
+    RowBox[{"commentout", " ", "this", " ", 
+     RowBox[{"line", "."}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
     RowBox[{"Turn", " ", "off", " ", "out"}], "-", "of", "-", 
-    RowBox[{"figure", " ", "placement", " ", "warnings"}]}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{"Off", "[", 
-  RowBox[{"Callout", "::", "copos"}], "]"}], "\[IndentingNewLine]", 
+    RowBox[{"figure", " ", "placement", " ", "warnings"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"Off", "[", 
+   RowBox[{"Callout", "::", "copos"}], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Off", "[", 
   RowBox[{"Part", "::", "partw"}], "]"}]}], "Input",
  CellChangeTimes->{{3.819756714933393*^9, 3.819756715269256*^9}, {
@@ -154,9 +69,22 @@ Cell[BoxData[{
    3.8199835121701517`*^9}, {3.8200118816099653`*^9, 3.820011937208674*^9}, 
    3.820012376303164*^9, {3.82002022732353*^9, 3.82002025516193*^9}, {
    3.8200202860974083`*^9, 3.820020327791683*^9}, {3.82002646205236*^9, 
-   3.820026468443898*^9}},
+   3.820026468443898*^9}, {3.82008596562437*^9, 3.820085967742997*^9}, {
+   3.820176668441326*^9, 3.82017666896069*^9}, {3.820178120075474*^9, 
+   3.820178196893004*^9}, {3.8201783443919*^9, 3.82017835410296*^9}, {
+   3.8201877276075773`*^9, 3.820187729446829*^9}, {3.820234002045965*^9, 
+   3.820234002517293*^9}},
  CellLabel->
-  "In[841]:=",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
+  "In[768]:=",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
+
+Cell[BoxData["\<\"/Users/marknovak/Git/aaaManuscripts/GeometricComplexity/\
+mathematica/results\"\>"], "Output",
+ CellChangeTimes->{
+  3.820178197805622*^9, 3.8201877299388657`*^9, {3.820233997002673*^9, 
+   3.820234003122151*^9}},
+ CellLabel->
+  "Out[769]=",ExpressionUUID->"3130a520-e0a2-4bc6-95e0-7305b4fcc8b0"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -221,7 +149,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{"\[Alpha]", ",", "1", ",", "\"\<a\>\""}], "}"}], ",", "0", ",", 
-     "50", ",", "0.1"}], "}"}], ",", "\[IndentingNewLine]", " ", 
+     "100", ",", "0.1"}], "}"}], ",", "\[IndentingNewLine]", " ", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -237,7 +165,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{"\[Chi]", ",", "1", ",", "\"\<c\>\""}], "}"}], ",", "0", ",", 
-     "20", ",", "0.1"}], "}"}], ",", "\[IndentingNewLine]", 
+     "50", ",", "0.1"}], "}"}], ",", "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -252,7 +180,7 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"Nmax", ",", "10"}], "}"}], ",", "1", ",", "10", ",", "1"}], 
+      RowBox[{"Nmax", ",", "10"}], "}"}], ",", "1", ",", "1000", ",", "1"}], 
     "}"}], ",", "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -282,30 +210,33 @@ Cell[BoxData[
    3.820019479563328*^9}, {3.820019592100313*^9, 3.820019666217124*^9}, {
    3.820019709272553*^9, 3.820019770605379*^9}, {3.8200198435714293`*^9, 
    3.820019845874349*^9}, {3.820019990701679*^9, 3.820020044610579*^9}, {
-   3.820020353840136*^9, 3.82002035440691*^9}},
+   3.820020353840136*^9, 3.82002035440691*^9}, {3.820169674734667*^9, 
+   3.820169674941517*^9}, {3.8201697124132442`*^9, 3.820169712459915*^9}, {
+   3.8201697569475613`*^9, 3.820169757274506*^9}},
  CellLabel->
-  "In[840]:=",ExpressionUUID->"81016124-60c3-4b51-aacf-8d7be495c46f"],
+  "In[767]:=",ExpressionUUID->"81016124-60c3-4b51-aacf-8d7be495c46f"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`Nmax$$ = 10, $CellContext`Nmin$$ = 
-    2, $CellContext`\[Alpha]$$ = 1, $CellContext`\[Beta]$$ = 
-    0.22, $CellContext`\[Delta]$$ = 0.5, $CellContext`\[Nu]$$ = 
-    2, $CellContext`\[CapitalPi]$$ = 2, $CellContext`\[Chi]$$ = 3.1, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`\[Alpha]$$], 1, "a"}, 0, 50, 0.1}, {{
+    2, $CellContext`\[Alpha]$$ = 
+    1, $CellContext`\[Beta]$$ = $CellContext`Nmax$$^(-1), $CellContext`\
+\[Delta]$$ = 0.5, $CellContext`\[Nu]$$ = 2, $CellContext`\[CapitalPi]$$ = 
+    3, $CellContext`\[Chi]$$ = 32.7, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Alpha]$$], 1, "a"}, 0, 100, 0.1}, {{
        Hold[$CellContext`\[Beta]$$], $CellContext`Nmax$$^(-1), "b"}, 0, 2, 
       0.01}, {{
        Hold[$CellContext`\[Nu]$$], 2, "n"}, 0, 3, 0.01}, {{
-       Hold[$CellContext`\[Chi]$$], 1, "c"}, 0, 20, 0.1}, {{
+       Hold[$CellContext`\[Chi]$$], 1, "c"}, 0, 50, 0.1}, {{
        Hold[$CellContext`\[Delta]$$], 0.5, "d"}, -10, 10, 0.1}, {{
        Hold[$CellContext`Nmin$$], 2}, 1, 10, 1}, {{
-       Hold[$CellContext`Nmax$$], 10}, 1, 10, 1}, {{
+       Hold[$CellContext`Nmax$$], 10}, 1, 1000, 1}, {{
        Hold[$CellContext`\[CapitalPi]$$], 2, "P"}, 1, 5, 1}}, 
-    Typeset`size$$ = {1048., {325., 331.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {1048., {235., 241.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
@@ -344,16 +275,16 @@ $CellContext`c -> $CellContext`\[Chi]$$], $CellContext`d -> $CellContext`\
            Directive[Dashed], 
            Directive[DotDashed], 
            Directive[Dotted]}]], 
-      "Specifications" :> {{{$CellContext`\[Alpha]$$, 1, "a"}, 0, 50, 
+      "Specifications" :> {{{$CellContext`\[Alpha]$$, 1, "a"}, 0, 100, 
          0.1}, {{$CellContext`\[Beta]$$, $CellContext`Nmax$$^(-1), "b"}, 0, 2,
           0.01}, {{$CellContext`\[Nu]$$, 2, "n"}, 0, 3, 
-         0.01}, {{$CellContext`\[Chi]$$, 1, "c"}, 0, 20, 
+         0.01}, {{$CellContext`\[Chi]$$, 1, "c"}, 0, 50, 
          0.1}, {{$CellContext`\[Delta]$$, 0.5, "d"}, -10, 10, 
          0.1}, {{$CellContext`Nmin$$, 2}, 1, 10, 
-         1}, {{$CellContext`Nmax$$, 10}, 1, 10, 
+         1}, {{$CellContext`Nmax$$, 10}, 1, 1000, 
          1}, {{$CellContext`\[CapitalPi]$$, 2, "P"}, 1, 5, 1}}, 
       "Options" :> {ControlPlacement -> Bottom}, "DefaultOptions" :> {}],
-     ImageSizeCache->{1103., {479., 486.}},
+     ImageSizeCache->{1103., {389., 396.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -383,9 +314,13 @@ $CellContext`c -> $CellContext`\[Chi]$$], $CellContext`d -> $CellContext`\
    3.820019714492927*^9, 3.820019770987879*^9}, 3.820019846318962*^9, 
    3.820019932846002*^9, {3.8200200216089287`*^9, 3.820020045057282*^9}, 
    3.820020118653047*^9, 3.820020257260145*^9, {3.820020313393875*^9, 
-   3.820020355468431*^9}, 3.820026327765894*^9, 3.8200264137252283`*^9},
+   3.820020355468431*^9}, 3.820026327765894*^9, 3.8200264137252283`*^9, 
+   3.82008595844304*^9, 3.820096380891561*^9, 3.820169633865263*^9, 
+   3.820169677525741*^9, 3.8201697130711393`*^9, {3.820169748392209*^9, 
+   3.820169757731538*^9}, 3.8201766601106586`*^9, 3.820178200432311*^9, 
+   3.820187616634687*^9, 3.820233997100527*^9},
  CellLabel->
-  "Out[840]=",ExpressionUUID->"7c022eb1-2dee-4ac4-a74f-2774c5a2a21e"]
+  "Out[767]=",ExpressionUUID->"46dbfcff-a9d3-4090-bc90-d7c833bd9769"]
 }, Open  ]]
 },
 WindowSize->{1245, 1254},
@@ -406,10 +341,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 4900, 138, 573, "Input",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
 Cell[CellGroupData[{
-Cell[5483, 162, 5487, 124, 428, "Input",ExpressionUUID->"81016124-60c3-4b51-aacf-8d7be495c46f"],
-Cell[10973, 288, 5442, 99, 988, "Output",ExpressionUUID->"7c022eb1-2dee-4ac4-a74f-2774c5a2a21e"]
+Cell[580, 22, 2519, 55, 246, "Input",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
+Cell[3102, 79, 314, 6, 42, "Output",ExpressionUUID->"3130a520-e0a2-4bc6-95e0-7305b4fcc8b0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3453, 90, 5640, 126, 428, "Input",ExpressionUUID->"81016124-60c3-4b51-aacf-8d7be495c46f"],
+Cell[9096, 218, 5734, 104, 808, "Output",ExpressionUUID->"46dbfcff-a9d3-4090-bc90-d7c833bd9769"]
 }, Open  ]]
 }
 ]

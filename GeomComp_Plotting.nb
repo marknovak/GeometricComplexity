@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    171101,       3715]
-NotebookOptionsPosition[    166171,       3622]
-NotebookOutlinePosition[    166597,       3639]
-CellTagsIndexPosition[    166554,       3636]
+NotebookDataLength[     97452,       2150]
+NotebookOptionsPosition[     92284,       2058]
+NotebookOutlinePosition[     92711,       2075]
+CellTagsIndexPosition[     92668,       2072]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -80,7 +80,7 @@ Cell[BoxData[{
    3.8191602625077143`*^9, 3.819160263474534*^9}, {3.8192429647992563`*^9, 
    3.819242965366139*^9}, 3.820337765434568*^9},
  CellLabel->
-  "In[2204]:=",ExpressionUUID->"0c00a49f-9df7-4d76-9874-5b4865d96a49"],
+  "In[3292]:=",ExpressionUUID->"0c00a49f-9df7-4d76-9874-5b4865d96a49"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -90,22 +90,27 @@ Cell[BoxData[
    ",", "\<\"P2fixAG.txt\"\>", ",", "\<\"P2fixGIA.txt\"\>", 
    ",", "\<\"P2fixGI.txt\"\>", ",", "\<\"P2fixH2.txt\"\>", 
    ",", "\<\"P2fixH3.txt\"\>", ",", "\<\"P2fixHT.txt\"\>", 
-   ",", "\<\"P2fixHV.txt\"\>", ",", "\<\"P2fixSH.txt\"\>", 
-   ",", "\<\"P2varA1.txt\"\>", ",", "\<\"P2varA3.txt\"\>", 
-   ",", "\<\"P2varAG.txt\"\>", ",", "\<\"P2varGIA.txt\"\>", 
-   ",", "\<\"P2varGI.txt\"\>", ",", "\<\"P2varH2.txt\"\>", 
-   ",", "\<\"P2varH3.txt\"\>", ",", "\<\"P2varHT.txt\"\>", 
-   ",", "\<\"P2varHV.txt\"\>", ",", "\<\"P2varSH.txt\"\>", 
+   ",", "\<\"P2fixHV.txt\"\>", ",", "\<\"P2fixKVBA.txt\"\>", 
+   ",", "\<\"P2fixSH.txt\"\>", ",", "\<\"P2varA1.txt\"\>", 
+   ",", "\<\"P2varA3.txt\"\>", ",", "\<\"P2varAG.txt\"\>", 
+   ",", "\<\"P2varGIA.txt\"\>", ",", "\<\"P2varGI.txt\"\>", 
+   ",", "\<\"P2varH2.txt\"\>", ",", "\<\"P2varH3.txt\"\>", 
+   ",", "\<\"P2varHT.txt\"\>", ",", "\<\"P2varHV.txt\"\>", 
+   ",", "\<\"P2varKVBA.txt\"\>", ",", "\<\"P2varSH.txt\"\>", 
    ",", "\<\"P3fixA2.txt\"\>", ",", "\<\"P3fixAA.txt\"\>", 
    ",", "\<\"P3fixBD.txt\"\>", ",", "\<\"P3fixBWL.txt\"\>", 
    ",", "\<\"P3fixCM.txt\"\>", ",", "\<\"P3fixH3R.txt\"\>", 
    ",", "\<\"P3fixHLB.txt\"\>", ",", "\<\"P3fixMH.txt\"\>", 
-   ",", "\<\"P3fixSSS.txt\"\>", ",", "\<\"P3fixTTA.txt\"\>", 
-   ",", "\<\"P3varA2.txt\"\>", ",", "\<\"P3varAA.txt\"\>", 
-   ",", "\<\"P3varBD.txt\"\>", ",", "\<\"P3varBWL.txt\"\>", 
-   ",", "\<\"P3varCM.txt\"\>", ",", "\<\"P3varH3R.txt\"\>", 
-   ",", "\<\"P3varHLB.txt\"\>", ",", "\<\"P3varMH.txt\"\>", 
+   ",", "\<\"P3fixSBB.txt\"\>", ",", "\<\"P3fixSSS.txt\"\>", 
+   ",", "\<\"P3fixTTA.txt\"\>", ",", "\<\"P3varA2.txt\"\>", 
+   ",", "\<\"P3varAA.txt\"\>", ",", "\<\"P3varBD.txt\"\>", 
+   ",", "\<\"P3varBWL.txt\"\>", ",", "\<\"P3varCM.txt\"\>", 
+   ",", "\<\"P3varH3R.txt\"\>", ",", "\<\"P3varHLB.txt\"\>", 
+   ",", "\<\"P3varMH.txt\"\>", ",", "\<\"P3varSBB.txt\"\>", 
    ",", "\<\"P3varSSS.txt\"\>", ",", "\<\"P3varTTA.txt\"\>", 
+   ",", "\<\"P4fixAAOR.txt\"\>", ",", "\<\"P4fixBDOR.txt\"\>", 
+   ",", "\<\"P4fixCMOR.txt\"\>", ",", "\<\"P4varAAOR.txt\"\>", 
+   ",", "\<\"P4varBDOR.txt\"\>", ",", "\<\"P4varCMOR.txt\"\>", 
    ",", "\<\"P4varSN1.txt\"\>", ",", "\<\"P4varSN2.txt\"\>"}], 
   "}"}]], "Output",
  CellChangeTimes->{
@@ -128,9 +133,17 @@ Cell[BoxData[
    3.820339674018972*^9, 3.820341250811782*^9, 3.82035990276926*^9, 
    3.820360131866177*^9, 3.820361062384572*^9, 3.820439937214327*^9, 
    3.820439970379024*^9, 3.820440024294969*^9, 3.820442616626994*^9, 
-   3.820454115370569*^9, 3.820454496105198*^9},
+   3.820454115370569*^9, 3.820454496105198*^9, 3.820495905839884*^9, 
+   3.82049593905258*^9, 3.8205007923328648`*^9, 3.820501562394198*^9, 
+   3.820509734824134*^9, 3.820511359632064*^9, 3.820512808279379*^9, 
+   3.8205302322909403`*^9, 3.820535652326866*^9, 3.820535726124239*^9, 
+   3.820535800337336*^9, 3.820535838051366*^9, {3.820535884754265*^9, 
+   3.820535909192408*^9}, 3.82054148473533*^9, 3.8205415486200438`*^9, {
+   3.820606029703043*^9, 3.82060604636987*^9}, 3.820606431127605*^9, 
+   3.820607059818666*^9, 3.820607470826818*^9, 3.8206077541030293`*^9, 
+   3.8206208160680037`*^9},
  CellLabel->
-  "Out[2206]=",ExpressionUUID->"1dda7b33-0d8c-47fc-a34b-af68d2679602"]
+  "Out[3294]=",ExpressionUUID->"00de21d3-8e72-4514-b96e-b9493a675307"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -153,24 +166,44 @@ Cell[BoxData[
  RowBox[{"varH1", "//", "TableForm"}]], "Input",
  CellChangeTimes->{{3.820337780033626*^9, 3.820337784888517*^9}, {
   3.820337820480145*^9, 3.8203378405023317`*^9}, {3.820439358726396*^9, 
-  3.8204393823725986`*^9}},
+  3.8204393823725986`*^9}, {3.8205008267921247`*^9, 3.820500836135211*^9}},
  CellLabel->
-  "In[2209]:=",ExpressionUUID->"d4b5d756-95be-4b7b-a925-4481e703a331"],
+  "In[3297]:=",ExpressionUUID->"d4b5d756-95be-4b7b-a925-4481e703a331"],
 
 Cell[BoxData[
  TagBox[GridBox[{
     {"21", "2", "5", "2", "1.3111412516513685`"},
     {"21", "3", "5", "3", "1.146538105216769`"},
+    {"21", "5", "5", "4", "0.8557769154260368`"},
+    {"21", "8", "5", "5", "0.49153086302716464`"},
     {"34", "2", "6", "2", "1.5665321494423496`"},
-    {"34", "3", "6", "3", "1.4330868572045907`"},
+    {"34", "3", "6", "3", "1.433086857204591`"},
+    {"34", "5", "6", "4", "1.2056937012192392`"},
+    {"34", "8", "6", "5", "0.9523335273813692`"},
     {"55", "2", "7", "2", "1.8136946120830588`"},
     {"55", "3", "7", "3", "1.7002375192186507`"},
+    {"55", "5", "7", "4", "1.5113571638644245`"},
+    {"55", "8", "7", "5", "1.316619540104386`"},
     {"89", "2", "8", "2", "2.0462579774309417`"},
     {"89", "3", "8", "3", "1.9469280099828232`"},
+    {"89", "5", "8", "4", "1.782916973405365`"},
+    {"89", "8", "8", "5", "1.6238801495479844`"},
     {"144", "2", "9", "2", "2.2697383683950396`"},
     {"144", "3", "9", "3", "2.180361979317834`"},
+    {"144", "5", "9", "4", "2.0338439108857087`"},
+    {"144", "8", "9", "5", "1.897806329629328`"},
     {"233", "2", "10", "2", "2.490001477038964`"},
-    {"233", "3", "10", "3", "2.407894360770092`"}
+    {"233", "3", "10", "3", "2.407894360770092`"},
+    {"233", "5", "10", "4", "2.273751573134125`"},
+    {"233", "8", "10", "5", "2.153916548253455`"},
+    {"377", "2", "11", "2", "2.707678122641165`"},
+    {"377", "3", "11", "3", "2.6309746812664376`"},
+    {"377", "5", "11", "4", "2.505874322917621`"},
+    {"377", "8", "11", "5", "2.397485450345037`"},
+    {"610", "2", "12", "2", "2.923138229459887`"},
+    {"610", "3", "12", "3", "2.8505083829313276`"},
+    {"610", "5", "12", "4", "2.7321336463549386`"},
+    {"610", "8", "12", "5", "2.632106651286822`"}
    },
    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
    GridBoxSpacings->{"Columns" -> {
@@ -189,10 +222,17 @@ Cell[BoxData[
    3.8203599028302937`*^9, 3.820360131925*^9, 3.820361062447731*^9, {
    3.820439371557496*^9, 3.820439382608864*^9}, 3.820439937262168*^9, 
    3.8204399704433107`*^9, 3.820440024356123*^9, 3.820442616695384*^9, 
-   3.820454115464222*^9, 3.820454496201912*^9},
+   3.820454115464222*^9, 3.820454496201912*^9, 3.820495908187969*^9, 
+   3.820495939098359*^9, 3.8205007948894663`*^9, 3.820501562490857*^9, 
+   3.820509734914969*^9, 3.8205113598599*^9, 3.820512808355678*^9, 
+   3.820530232568018*^9, 3.82053565282127*^9, 3.820535726164564*^9, 
+   3.820535800409954*^9, 3.82053583812362*^9, {3.8205358848374023`*^9, 
+   3.820535909265383*^9}, 3.820541485704562*^9, 3.8205415491451273`*^9, 
+   3.8206060464349203`*^9, 3.820606431191064*^9, 3.820607059901902*^9, 
+   3.8206074708864594`*^9, 3.820607754171915*^9, 3.8206208164672203`*^9},
  CellLabel->
-  "Out[2209]//TableForm=",ExpressionUUID->"cab521e3-2a64-49c3-8c76-\
-b1f0483df857"]
+  "Out[3297]//TableForm=",ExpressionUUID->"cc7ff6c6-e2af-4b59-978d-\
+bffefdb45f0e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -209,37 +249,43 @@ independent variables\
 5389169b4ea7"],
 
 Cell["\<\
-Denom_ is the measure to which the Numer_ measure is relativized.  \
+Denom_ is the measure to which the Numer_ measure is relativized.  
+**Note that only real part of complex numbers are returned (i.e. we ignore \
+what are usually small imaginary parts )**\
 \>", "Text",
  CellChangeTimes->{{3.817323812435058*^9, 3.817323855233652*^9}, {
   3.81924247649813*^9, 3.819242514072391*^9}, {3.820337302291645*^9, 
-  3.820337320401532*^9}, {3.820337993705056*^9, 
-  3.820338004240802*^9}},ExpressionUUID->"4feccc87-384b-4496-acba-\
+  3.820337320401532*^9}, {3.820337993705056*^9, 3.820338004240802*^9}, {
+  3.820607425727882*^9, 
+  3.820607462854632*^9}},ExpressionUUID->"4feccc87-384b-4496-acba-\
 eba7f0fd4dc8"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"Relativize", "[", 
-    RowBox[{"dataDenom_", ",", "dataNumer_"}], "]"}], ":=", 
-   RowBox[{"Join", "[", 
-    RowBox[{
-     RowBox[{"dataNumer", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", 
-        RowBox[{"{", 
-         RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]}], "]"}], "]"}], 
-     ",", 
-     RowBox[{"Transpose", "[", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"dataNumer", "[", 
-         RowBox[{"[", 
-          RowBox[{"All", ",", "5"}], "]"}], "]"}], "/", 
-        RowBox[{"dataDenom", "[", 
-         RowBox[{"[", 
-          RowBox[{"All", ",", "5"}], "]"}], "]"}]}], "}"}], "]"}], ",", "2"}],
-     "]"}]}], ";"}]], "Input",
+   RowBox[{
+    RowBox[{"Relativize", "[", 
+     RowBox[{"dataDenom_", ",", "dataNumer_"}], "]"}], ":=", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"dataDenom", "[", 
+       RowBox[{"[", 
+        RowBox[{"All", ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]}], "]"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Transpose", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"dataNumer", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "5"}], "]"}], "]"}], "]"}], "/", 
+         RowBox[{"dataDenom", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", "5"}], "]"}], "]"}]}], "}"}], "]"}], ",", 
+      "2"}], "]"}]}], ";"}], " "}]], "Input",
  CellChangeTimes->{{3.81732299333392*^9, 3.81732302174054*^9}, {
    3.8173230963865223`*^9, 3.8173231822366543`*^9}, {3.817323301664303*^9, 
    3.8173235226706944`*^9}, {3.8173239140725803`*^9, 3.817323992444365*^9}, 
@@ -253,9 +299,17 @@ Cell[BoxData[
    3.8203373830575027`*^9}, {3.820337417743504*^9, 3.8203374295587463`*^9}, {
    3.820360895274284*^9, 3.8203609064890327`*^9}, {3.820361051500152*^9, 
    3.820361052867422*^9}, {3.8204393422629538`*^9, 3.820439377868891*^9}, {
-   3.8204437813592043`*^9, 3.820443782198412*^9}},
+   3.8204437813592043`*^9, 3.820443782198412*^9}, {3.8206071544916763`*^9, 
+   3.820607156162504*^9}, {3.820607195545083*^9, 3.82060729044552*^9}, {
+   3.820607361540106*^9, 3.82060737279438*^9}, {3.8206074113051558`*^9, 
+   3.820607423096562*^9}},
  CellLabel->
-  "In[2210]:=",ExpressionUUID->"687b2a81-889a-4748-937a-9a078e6f818a"],
+  "In[3298]:=",ExpressionUUID->"687b2a81-889a-4748-937a-9a078e6f818a"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.820607308316888*^9},
+ CellLabel->
+  "In[3299]:=",ExpressionUUID->"65696f40-73a3-45ba-974c-c9072eba0f43"],
 
 Cell[BoxData[{
  RowBox[{
@@ -268,7 +322,15 @@ Cell[BoxData[{
       "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{
-        RowBox[{"GrayLevel", "[", "0.7", "]"}], ",", "Dashed"}], "}"}]}], 
+        RowBox[{"GrayLevel", "[", "0.1", "]"}], ",", "Dashed"}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"GrayLevel", "[", "0.4", "]"}], ",", "DotDashed"}], "}"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"GrayLevel", "[", "0.7", "]"}], ",", "Dotted"}], "}"}]}], 
      "\[IndentingNewLine]", "}"}]}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -306,15 +368,28 @@ Cell[BoxData[{
        RowBox[{"{", "1", "}"}]}], "}"}]}], ",", 
     RowBox[{"GridLinesStyle", "\[Rule]", 
      RowBox[{"Directive", "[", 
-      RowBox[{"LightGray", ",", " ", "Dashed"}], "]"}]}], ",", " ", 
+      RowBox[{"Gray", ",", " ", "Dashed"}], "]"}]}], ",", " ", 
     RowBox[{"(*", " ", 
      RowBox[{"horizontal", " ", "line", " ", "at", " ", "1"}], " ", "*)"}], 
     "\[IndentingNewLine]", 
     RowBox[{"PlotRange", "\[Rule]", "plotRange"}], ",", "\[IndentingNewLine]", 
-    RowBox[{"PlotLegends", "\[Rule]", "False"}], ",", "\[IndentingNewLine]", 
-    RowBox[{"Frame", "\[Rule]", " ", "True"}], ",", "\[IndentingNewLine]", 
-    RowBox[{"PlotStyle", "\[Rule]", "PlotStyleCols"}], ",", 
+    RowBox[{"PlotRangePadding", "\[Rule]", "0.05"}], ",", 
     "\[IndentingNewLine]", 
+    RowBox[{"PlotLegends", "\[Rule]", "False"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Axes", "\[Rule]", " ", "False"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Frame", "\[Rule]", " ", "True"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"PlotStyle", "\[Rule]", 
+     RowBox[{"PlotStyleCols", "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ";;", 
+        RowBox[{"Length", "[", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"data", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", 
+             RowBox[{"predVars", "[", 
+              RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "]"}], "]"}], "]"}]}], 
+       "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
     RowBox[{"FrameLabel", "\[Rule]", " ", "axislabels"}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{"PlotLabel", "\[Rule]", "plotlabel"}]}], "]"}]}]}], "Input",
@@ -377,9 +452,19 @@ Cell[BoxData[{
    3.820450919415773*^9, 3.820450970573242*^9}, {3.820453409086705*^9, 
    3.820453415549988*^9}, {3.820453456636615*^9, 3.8204535066735363`*^9}, {
    3.820454365953689*^9, 3.820454366800994*^9}, {3.820454451581819*^9, 
-   3.820454460404855*^9}},
+   3.820454460404855*^9}, {3.820500866935145*^9, 3.8205009118927307`*^9}, {
+   3.820500959043461*^9, 3.820501007833465*^9}, {3.82050107684754*^9, 
+   3.82050108167096*^9}, {3.820501423075223*^9, 3.820501423274784*^9}, 
+   3.820530241739563*^9, {3.8205352138509827`*^9, 3.820535252265112*^9}, {
+   3.820535317014792*^9, 3.820535336765746*^9}, {3.8205355318143883`*^9, 
+   3.8205355359579906`*^9}, {3.820535567653222*^9, 3.8205355709968767`*^9}, {
+   3.820535720415329*^9, 3.820535723926764*^9}, {3.820535795932805*^9, 
+   3.8205357961555977`*^9}, {3.8205358265370893`*^9, 3.820535907364373*^9}, {
+   3.820541476365152*^9, 3.820541482936976*^9}, 3.82054154698248*^9, {
+   3.820606927085288*^9, 3.82060694780324*^9}, {3.820607132678157*^9, 
+   3.82060714305173*^9}, {3.8206077517730207`*^9, 3.820607752796213*^9}},
  CellLabel->
-  "In[2211]:=",ExpressionUUID->"735164d9-3203-4292-ad14-44c18b28f061"]
+  "In[3300]:=",ExpressionUUID->"735164d9-3203-4292-ad14-44c18b28f061"]
 }, Open  ]]
 }, Open  ]],
 
@@ -414,11 +499,18 @@ Cell[BoxData[{
   RowBox[{"axislabelsLineRel2", "=", 
    RowBox[{"{", 
     RowBox[{"\"\<Max. prey abundance\>\"", ",", "\"\<\>\""}], "}"}]}], 
-  ";"}]}], "Input",
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xrange", " ", "=", " ", 
+   RowBox[{"MinMax", "[", 
+    RowBox[{"varH1", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.816449033518476*^9, 3.816449033782384*^9}, {
-  3.817326875593637*^9, 3.8173268853850927`*^9}},
+  3.817326875593637*^9, 3.8173268853850927`*^9}, {3.820535351004733*^9, 
+  3.820535416275148*^9}},
  CellLabel->
-  "In[2213]:=",ExpressionUUID->"8a60042e-2af2-43a3-8c9a-4b82d539bfff"],
+  "In[3302]:=",ExpressionUUID->"8a60042e-2af2-43a3-8c9a-4b82d539bfff"],
 
 Cell[CellGroupData[{
 
@@ -437,8 +529,8 @@ Cell[BoxData[{
      "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<H1\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p1varH1vLR", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -450,8 +542,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<LR/H1\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}]}], "Input",
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.816447039347436*^9, 3.8164470405299673`*^9}, {
    3.816448366713172*^9, 3.8164484026216784`*^9}, {3.8167031483987713`*^9, 
    3.816703152749979*^9}, {3.816712694934739*^9, 3.8167127223070908`*^9}, {
@@ -470,9 +562,11 @@ Cell[BoxData[{
    3.820361268203433*^9}, 3.820361647228779*^9, {3.8204220966449957`*^9, 
    3.820422101427493*^9}, 3.8204398705056057`*^9, 3.8204403539109087`*^9, {
    3.820442793519513*^9, 3.820442794638156*^9}, {3.82045412184652*^9, 
-   3.8204541245773897`*^9}, 3.82045443585399*^9, 3.820454481083798*^9},
+   3.8204541245773897`*^9}, 3.82045443585399*^9, 3.820454481083798*^9, {
+   3.820535421970633*^9, 3.820535433665814*^9}, {3.8205355843564157`*^9, 
+   3.820535587875677*^9}},
  CellLabel->
-  "In[2217]:=",ExpressionUUID->"14f21cb8-243d-4eb2-9bdf-c9891575d5b3"]
+  "In[3307]:=",ExpressionUUID->"14f21cb8-243d-4eb2-9bdf-c9891575d5b3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -492,8 +586,21 @@ Cell[BoxData[{
      "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p2varH2vMM", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"varH2", ",", "varMM"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<MM/H2\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vHV", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -505,8 +612,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<HV/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vAG", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -518,8 +625,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<AG/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vGI", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -531,8 +638,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<GI/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vGIA", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -544,8 +651,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<GIA/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vHT", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -557,8 +664,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<HT/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vH3", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -570,8 +677,21 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<H3/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p2varH2vKVBA", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"varH2", ",", "varKVBA"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<KVBA/H2\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vA1", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -583,8 +703,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<A1/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vA3", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -596,8 +716,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<A3/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2varH2vSH", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -609,8 +729,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SH/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}]}], "Input",
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.815519237637163*^9, 3.815519245555642*^9}, {
    3.8158480074026823`*^9, 3.8158480080107307`*^9}, {3.816447071678545*^9, 
    3.816447106713594*^9}, {3.816447146830752*^9, 3.816447207643733*^9}, {
@@ -627,10 +747,11 @@ Cell[BoxData[{
    3.820339306822566*^9, 3.820339331228903*^9}, {3.820339375291284*^9, 
    3.820339375659152*^9}, {3.8203398745684023`*^9, 3.820339951612637*^9}, {
    3.820359805493299*^9, 3.8203598236362257`*^9}, 3.820422104276939*^9, 
-   3.820440361110385*^9},
- CellLabel->
-  "In[2219]:=",ExpressionUUID->"37e286e1-45e4-42a5-9180-cabe5205f2ed"]
-}, Closed]],
+   3.820440361110385*^9, {3.820535610206481*^9, 3.820535613804261*^9}, {
+   3.820620735672349*^9, 3.820620747254779*^9}, {3.820625376762005*^9, 
+   3.820625384849245*^9}},ExpressionUUID->"37e286e1-45e4-42a5-9180-\
+cabe5205f2ed"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -650,8 +771,8 @@ Cell[BoxData[{
      "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvCM", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -663,8 +784,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<CM/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvAA", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -676,8 +797,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<AA/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvBWL", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -689,8 +810,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<BWL/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvH3R", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -702,8 +823,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<H3R/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvA2", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -715,8 +836,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<A2/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvHLB", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -728,8 +849,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<HLB/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvMH", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -741,8 +862,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<MH/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3varBDvTTA", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -754,22 +875,34 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<TTA/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"p3varBDvSSS", "=", 
-    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Relativize", "[", 
-       RowBox[{"varBD", ",", "varSSS"}], "]"}], ",", "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
-      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SSS/BD\>\"", ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+  RowBox[{"p3varBDvSBB", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"varBD", ",", "varSBB"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SBB/BD\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p3varBDvSSS", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"varBD", ",", "varSSS"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SSS/BD\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.815519237637163*^9, 3.815519245555642*^9}, {
    3.8158480074026823`*^9, 3.8158480080107307`*^9}, {3.816447071678545*^9, 
    3.816447106713594*^9}, {3.816447146830752*^9, 3.816447207643733*^9}, {
@@ -785,116 +918,93 @@ Cell[BoxData[{
    3.8203386569439573`*^9, 3.82033866197532*^9}, {3.8203388241221943`*^9, 
    3.820338826617652*^9}, {3.820339335173245*^9, 3.820339345196364*^9}, {
    3.820339961332734*^9, 3.82034003313794*^9}, {3.820340111175024*^9, 
-   3.820340124438216*^9}, {3.8203598473717747`*^9, 3.820359862721881*^9}},
+   3.820340124438216*^9}, {3.8203598473717747`*^9, 3.820359862721881*^9}, {
+   3.8205302052458677`*^9, 3.820530216043984*^9}, {3.820535614236966*^9, 
+   3.8205356167239923`*^9}, {3.820605261302792*^9, 3.820605278723461*^9}, {
+   3.820605956329487*^9, 3.820605956897286*^9}},
  CellLabel->
-  "In[2229]:=",ExpressionUUID->"c627ece8-31a5-446a-a187-f269403c829f"],
+  "In[3320]:=",ExpressionUUID->"c627ece8-31a5-446a-a187-f269403c829f"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[BoxData["PlotStyleCols"], "Input",
- CellLabel->
-  "In[2239]:=",ExpressionUUID->"40c648fb-0402-4dd9-81b4-87e2db0d3f9b"],
+Cell["k = 4 models", "Subsubsection",
+ CellChangeTimes->{{3.820605958530205*^9, 
+  3.820605962676898*^9}},ExpressionUUID->"64f11ebe-be10-49fe-9465-\
+118008debe8d"],
 
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    InterpretationBox[
-     ButtonBox[
-      TooltipBox[
-       GraphicsBox[{
-         {GrayLevel[0], RectangleBox[{0, 0}]}, 
-         {GrayLevel[0], RectangleBox[{1, -1}]}, 
-         {GrayLevel[0], RectangleBox[{0, -1}, {2, 1}]}},
-        AspectRatio->1,
-        DefaultBaseStyle->"ColorSwatchGraphics",
-        Frame->True,
-        FrameStyle->GrayLevel[0.],
-        FrameTicks->None,
-        ImageSize->
-         Dynamic[{
-          Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-           Magnification]}],
-        PlotRangePadding->None],
-       StyleBox[
-        RowBox[{"GrayLevel", "[", "0", "]"}], NumberMarks -> False]],
-      Appearance->None,
-      BaseStyle->{},
-      BaselinePosition->Baseline,
-      ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
-        If[
-         Not[
-          AbsoluteCurrentValue["Deployed"]], 
-         SelectionMove[Typeset`box$, All, Expression]; 
-         FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-         FrontEnd`Private`$ColorSelectorInitialColor = GrayLevel[0]; 
-         FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-         MathLink`CallFrontEnd[
-           FrontEnd`AttachCell[Typeset`box$, 
-            FrontEndResource["GrayLevelColorValueSelector"], {
-            0, {Left, Bottom}}, {Left, Top}, 
-            "ClosingActions" -> {
-             "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
-      DefaultBaseStyle->{},
-      Evaluator->Automatic,
-      Method->"Preemptive"],
-     GrayLevel[0],
-     Editable->False,
-     Selectable->False], "}"}], ",", 
-   RowBox[{"{", 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p4varBDOR", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{"varBDOR", ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<BDRO\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p4varBDORvCMOR", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
     RowBox[{
-     InterpretationBox[
-      ButtonBox[
-       TooltipBox[
-        GraphicsBox[{
-          {GrayLevel[0], RectangleBox[{0, 0}]}, 
-          {GrayLevel[0], RectangleBox[{1, -1}]}, 
-          {GrayLevel[0.7], RectangleBox[{0, -1}, {2, 1}]}},
-         AspectRatio->1,
-         DefaultBaseStyle->"ColorSwatchGraphics",
-         Frame->True,
-         FrameStyle->GrayLevel[0.4666666666666667],
-         FrameTicks->None,
-         ImageSize->
-          Dynamic[{
-           Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-            Magnification]}],
-         PlotRangePadding->None],
-        StyleBox[
-         RowBox[{"GrayLevel", "[", "0.7`", "]"}], NumberMarks -> False]],
-       Appearance->None,
-       BaseStyle->{},
-       BaselinePosition->Baseline,
-       ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
-         If[
-          Not[
-           AbsoluteCurrentValue["Deployed"]], 
-          SelectionMove[Typeset`box$, All, Expression]; 
-          FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-          FrontEnd`Private`$ColorSelectorInitialColor = GrayLevel[0.7]; 
-          FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-          MathLink`CallFrontEnd[
-            FrontEnd`AttachCell[Typeset`box$, 
-             FrontEndResource["GrayLevelColorValueSelector"], {
-             0, {Left, Bottom}}, {Left, Top}, 
-             "ClosingActions" -> {
-              "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
-       DefaultBaseStyle->{},
-       Evaluator->Automatic,
-       Method->"Preemptive"],
-      GrayLevel[0.7],
-      Editable->False,
-      Selectable->False], ",", 
-     RowBox[{"Dashing", "[", 
+     RowBox[{"Relativize", "[", 
+      RowBox[{"varBDOR", ",", "varCMOR"}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<CMOR/BDOR\>\"", 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p4varBDORvAAOR", "=", 
+    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Relativize", "[", 
+       RowBox[{"varBDOR", ",", "varAAOR"}], "]"}], ",", "\[IndentingNewLine]", 
       RowBox[{"{", 
-       RowBox[{"Small", ",", "Small"}], "}"}], "]"}]}], "}"}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.820453592029118*^9, 3.820454116044859*^9, 
-  3.8204544965972357`*^9},
+       RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<AAOR/BDOR\>\"", 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", 
+     "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"p4varBDORvSN1", "=", 
+     RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Relativize", "[", 
+        RowBox[{"varBDOR", ",", "varSN1"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+       "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SN1/BDOR\>\"", 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"p4varBDORvSN2", "=", 
+     RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Relativize", "[", 
+        RowBox[{"varBDOR", ",", "varSN2"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+       "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SN2/BDOR\>\"", 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "*)"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.820605968224869*^9, 3.820606022190215*^9}, {
+  3.820606068941037*^9, 3.820606234406135*^9}},
  CellLabel->
-  "Out[2239]=",ExpressionUUID->"7c22bd7b-61bd-47ab-8233-f840205a2687"]
-}, Open  ]]
-}, Closed]],
+  "In[3331]:=",ExpressionUUID->"3e610904-bb9d-460e-9ea7-f3fa79621b74"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -903,194 +1013,22 @@ Cell["Combined plots - Var", "Subsubsection",
   3.8203405083991957`*^9}},ExpressionUUID->"a5bfee81-7511-4a24-b263-\
 1486d49c543f"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"Map", "[", 
-    RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"DeleteDuplicates", "[", 
-    RowBox[{"varH1", "[", 
-     RowBox[{"[", 
-      RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "\[IndentingNewLine]",
-   "]"}]], "Input",
- CellChangeTimes->{{3.8204537845998077`*^9, 3.820453800462261*^9}, {
-  3.820453847918467*^9, 3.820453848268528*^9}, {3.820453878587722*^9, 
-  3.820453904521988*^9}},
+ RowBox[{
+  RowBox[{"PlotStyleColsVar", "=", 
+   RowBox[{"PlotStyleCols", "[", 
+    RowBox[{"[", 
+     RowBox[{"1", ";;", 
+      RowBox[{"Length", "[", 
+       RowBox[{"DeleteDuplicates", "[", 
+        RowBox[{"varH1", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}]}], "]"}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.820501474218446*^9, 3.820501493895547*^9}, 
+   3.820501867178059*^9},
  CellLabel->
-  "In[2240]:=",ExpressionUUID->"8b1e7e03-1d35-47cb-b502-7fee5e2675b1"],
-
-Cell[BoxData[
- TemplateBox[{"2", "3"},
-  "LineLegend",
-  DisplayFunction->(StyleBox[
-    StyleBox[
-     PaneBox[
-      TagBox[
-       GridBox[{{
-          TagBox[
-           GridBox[{{
-              GraphicsBox[{{
-                 Directive[
-                  EdgeForm[
-                   Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                  PointSize[0.5], 
-                  AbsoluteThickness[1.6], 
-                  GrayLevel[0]], {
-                  LineBox[{{0, 10}, {40, 10}}]}}, {
-                 Directive[
-                  EdgeForm[
-                   Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                  PointSize[0.5], 
-                  AbsoluteThickness[1.6], 
-                  GrayLevel[0]], {}}}, AspectRatio -> Full, 
-               ImageSize -> {40, 10}, PlotRangePadding -> None, ImagePadding -> 
-               Automatic, BaselinePosition -> (Scaled[0.1] -> Baseline)], #}, {
-              GraphicsBox[{{
-                 Directive[
-                  EdgeForm[
-                   Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                  PointSize[0.5], 
-                  AbsoluteThickness[1.6], 
-                  GrayLevel[0.7], 
-                  Dashing[{Small, Small}]], {
-                  LineBox[{{0, 10}, {40, 10}}]}}, {
-                 Directive[
-                  EdgeForm[
-                   Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                  PointSize[0.5], 
-                  AbsoluteThickness[1.6], 
-                  GrayLevel[0.7], 
-                  Dashing[{Small, Small}]], {}}}, AspectRatio -> Full, 
-               ImageSize -> {40, 10}, PlotRangePadding -> None, ImagePadding -> 
-               Automatic, 
-               BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}}, 
-            GridBoxAlignment -> {
-             "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, AutoDelete -> 
-            False, 
-            GridBoxDividers -> {"Columns" -> {{False}}, "Rows" -> {{False}}}, 
-            GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}}, 
-            GridBoxSpacings -> {"Columns" -> {{0.5}}, "Rows" -> {{0.8}}}], 
-           "Grid"]}}, 
-        GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-        AutoDelete -> False, 
-        GridBoxItemSize -> {
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-        GridBoxSpacings -> {"Columns" -> {{1}}, "Rows" -> {{0}}}], "Grid"], 
-      Alignment -> Left, AppearanceElements -> None, 
-      ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> "ResizeToFit"], 
-     LineIndent -> 0, StripOnInput -> False], {FontFamily -> "Arial"}, 
-    Background -> Automatic, StripOnInput -> False]& ),
-  Editable->True,
-  InterpretationFunction:>(RowBox[{"LineLegend", "[", 
-     RowBox[{
-       RowBox[{"{", 
-         RowBox[{
-           RowBox[{"Directive", "[", 
-             RowBox[{"{", 
-               InterpretationBox[
-                ButtonBox[
-                 TooltipBox[
-                  GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                   "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                   FrameStyle -> GrayLevel[0.], FrameTicks -> None, 
-                   PlotRangePadding -> None, ImageSize -> 
-                   Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                  StyleBox[
-                   RowBox[{"GrayLevel", "[", "0", "]"}], NumberMarks -> 
-                   False]], Appearance -> None, BaseStyle -> {}, 
-                 BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                 ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
-                   If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    GrayLevel[0]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["GrayLevelColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                 Automatic, Method -> "Preemptive"], 
-                GrayLevel[0], Editable -> False, Selectable -> False], "}"}], 
-             "]"}], ",", 
-           RowBox[{"Directive", "[", 
-             RowBox[{"{", 
-               RowBox[{
-                 InterpretationBox[
-                  ButtonBox[
-                   TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    GrayLevel[0.7], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> GrayLevel[0.4666666666666667], FrameTicks -> 
-                    None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    StyleBox[
-                    RowBox[{"GrayLevel", "[", "0.7`", "]"}], NumberMarks -> 
-                    False]], Appearance -> None, BaseStyle -> {}, 
-                   BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                   ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    GrayLevel[0.7]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["GrayLevelColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                   Automatic, Method -> "Preemptive"], 
-                  GrayLevel[0.7], Editable -> False, Selectable -> False], 
-                 ",", 
-                 RowBox[{"Dashing", "[", 
-                   RowBox[{"{", 
-                    RowBox[{"Small", ",", "Small"}], "}"}], "]"}]}], "}"}], 
-             "]"}]}], "}"}], ",", 
-       RowBox[{"{", 
-         RowBox[{#, ",", #2}], "}"}]}], "]"}]& )]], "Output",
- CellChangeTimes->{
-  3.82045380130415*^9, 3.820453848623198*^9, {3.820453881828767*^9, 
-   3.8204539051928387`*^9}, 3.820454116083747*^9, 3.820454496631159*^9},
- CellLabel->
-  "Out[2240]=",ExpressionUUID->"b71315c0-4ca8-4ae7-93ca-ce142ba4559e"]
-}, Open  ]],
+  "In[3334]:=",ExpressionUUID->"601736da-5f94-4068-b3df-065ace183fa7"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1111,7 +1049,7 @@ Cell[BoxData[{
        RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"Map", "[", 
-          RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
+          RowBox[{"Directive", ",", "PlotStyleColsVar"}], "]"}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"DeleteDuplicates", "[", 
           RowBox[{"varH1", "[", 
@@ -1144,9 +1082,9 @@ Cell[BoxData[{
    3.820453526985443*^9, 3.8204535282893457`*^9}, {3.820453625222767*^9, 
    3.820453669595346*^9}, {3.820453747777179*^9, 3.8204537519364758`*^9}, {
    3.820453815262314*^9, 3.820453829768147*^9}, {3.820453910098439*^9, 
-   3.820453915041703*^9}},
+   3.820453915041703*^9}, {3.820501470529426*^9, 3.820501499143772*^9}},
  CellLabel->
-  "In[2241]:=",ExpressionUUID->"2c5b9b4c-0f5d-4b06-9e4e-537a9720aa80"],
+  "In[3335]:=",ExpressionUUID->"2c5b9b4c-0f5d-4b06-9e4e-537a9720aa80"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1158,16 +1096,17 @@ Cell[BoxData[{
        RowBox[{"{", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"{", 
-          RowBox[{"p2varH2", ",", "p2varH2vHV", ",", "p2varH2vAG"}], "}"}], 
+          RowBox[{"p2varH2", ",", "p2varH2vMM", ",", "p2varH2vHV"}], "}"}], 
          ",", "\[IndentingNewLine]", 
          RowBox[{"{", 
-          RowBox[{"p2varH2vGI", ",", "p2varH2vGIA", ",", "p2varH2vHT"}], 
+          RowBox[{"p2varH2vAG", ",", "p2varH2vGI", ",", "p2varH2vGIA"}], 
           "}"}], ",", "\[IndentingNewLine]", 
          RowBox[{"{", 
-          RowBox[{"p2varH2vH3", ",", "p2varH2vA1", ",", "p2varH2vA3"}], "}"}],
-          ",", "\[IndentingNewLine]", 
-         RowBox[{"{", "p2varH2vSH", "}"}]}], "\[IndentingNewLine]", "}"}], 
-       ",", "\[IndentingNewLine]", 
+          RowBox[{"p2varH2vHT", ",", "p2varH2vH3", ",", "p2varH2vKVBA"}], 
+          "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p2varH2vA1", ",", "p2varH2vA3", ",", "p2varH2vSH"}], 
+          "}"}]}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
        RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"Placed", "[", "\[IndentingNewLine]", 
@@ -1175,7 +1114,7 @@ Cell[BoxData[{
        RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"Map", "[", 
-          RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
+          RowBox[{"Directive", ",", "PlotStyleColsVar"}], "]"}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"DeleteDuplicates", "[", 
           RowBox[{"varH1", "[", 
@@ -1192,9 +1131,11 @@ Cell[BoxData[{
   RowBox[{"Export", "[", 
    RowBox[{"\"\<GeomComp_varP2.pdf\>\"", ",", "AllVarP2"}], "]"}], 
   ";"}]}], "Input",
- CellChangeTimes->{3.820453931186556*^9},
- CellLabel->
-  "In[2243]:=",ExpressionUUID->"b36da3f0-e7f1-47e0-8e40-823f19a2153a"],
+ CellChangeTimes->{
+  3.820453931186556*^9, {3.8205015039119177`*^9, 3.8205015041516037`*^9}, {
+   3.820620765247404*^9, 3.820620775925467*^9}, {3.8206253955458107`*^9, 
+   3.820625408712368*^9}},ExpressionUUID->"b36da3f0-e7f1-47e0-8e40-\
+823f19a2153a"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1214,8 +1155,9 @@ Cell[BoxData[{
          RowBox[{"{", 
           RowBox[{"p3varBDvHLB", ",", "p3varBDvMH", ",", "p3varBDvTTA"}], 
           "}"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"{", "p3varBDvSSS", "}"}]}], "\[IndentingNewLine]", "}"}], 
-       ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p3varBDvSBB", ",", "p3varBDvSSS"}], "}"}]}], 
+        "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
        RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"Placed", "[", "\[IndentingNewLine]", 
@@ -1223,7 +1165,7 @@ Cell[BoxData[{
        RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"Map", "[", 
-          RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
+          RowBox[{"Directive", ",", "PlotStyleColsVar"}], "]"}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"DeleteDuplicates", "[", 
           RowBox[{"varH1", "[", 
@@ -1240,10 +1182,59 @@ Cell[BoxData[{
   RowBox[{"Export", "[", 
    RowBox[{"\"\<GeomComp_varP3.pdf\>\"", ",", "AllVarP3"}], "]"}], 
   ";"}]}], "Input",
- CellChangeTimes->{3.820453937546249*^9},
+ CellChangeTimes->{
+  3.820453937546249*^9, {3.820501508015766*^9, 3.820501508287448*^9}, {
+   3.820605351801919*^9, 3.8206053559367523`*^9}, {3.820606295500165*^9, 
+   3.820606295907669*^9}},
  CellLabel->
-  "In[2245]:=",ExpressionUUID->"8c28f538-537c-4e15-8f7f-5fd839385806"]
-}, Closed]]
+  "In[3339]:=",ExpressionUUID->"8c28f538-537c-4e15-8f7f-5fd839385806"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AllVarP4", "=", "\[IndentingNewLine]", 
+   RowBox[{"Legended", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"GraphicsGrid", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"p4varBDOR", ",", "p4varBDORvCMOR", ",", "p4varBDORvAAOR"}], 
+         "}"}], "\[IndentingNewLine]", 
+        RowBox[{"(*", "\[IndentingNewLine]", 
+         RowBox[{",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"p4varBDORvSN1", ",", "p4varBDORvSN2"}], "}"}]}], 
+         "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Placed", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Map", "[", 
+          RowBox[{"Directive", ",", "PlotStyleColsVar"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"varH1", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+         "LegendLabel", "\[Rule]", "\"\<Max. predator abundance\>\""}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"LegendLayout", "\[Rule]", "\"\<Row\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "Above"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<GeomComp_varP4.pdf\>\"", ",", "AllVarP4"}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.820606298948094*^9, 3.8206063625619*^9}, {
+  3.820606492316684*^9, 3.820606497212242*^9}},
+ CellLabel->
+  "In[3341]:=",ExpressionUUID->"7b555f5a-5407-47c1-8c4c-880ccdb42097"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1276,12 +1267,18 @@ Cell[BoxData[{
   RowBox[{"axislabelsLineRel2", "=", 
    RowBox[{"{", 
     RowBox[{"\"\<Prey levels\>\"", ",", "\"\<\>\""}], "}"}]}], 
-  ";"}]}], "Input",
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xrange", " ", "=", " ", 
+   RowBox[{"MinMax", "[", 
+    RowBox[{"varH1", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "3"}], "]"}], "]"}], "]"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.816449026462763*^9, 3.816449026789453*^9}, {
   3.816449072436429*^9, 3.816449129345319*^9}, {3.817326825103365*^9, 
-  3.817326837882925*^9}},
+  3.817326837882925*^9}, {3.820535640969983*^9, 3.820535644257073*^9}},
  CellLabel->
-  "In[2247]:=",ExpressionUUID->"feb1130c-7404-4962-a966-4f64f061cf71"],
+  "In[3343]:=",ExpressionUUID->"feb1130c-7404-4962-a966-4f64f061cf71"],
 
 Cell[CellGroupData[{
 
@@ -1300,8 +1297,8 @@ Cell[BoxData[{
      "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<H1\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p1fixH1vLR", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1313,8 +1310,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<LR/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}]}], "Input",
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.816447039347436*^9, 3.8164470405299673`*^9}, {
    3.816448366713172*^9, 3.8164484026216784`*^9}, {3.816449047005987*^9, 
    3.8164490627238903`*^9}, {3.816449158995249*^9, 3.816449164458736*^9}, {
@@ -1324,9 +1321,10 @@ Cell[BoxData[{
    3.8192428191209307`*^9, 3.819242832835525*^9}, {3.820338670231447*^9, 
    3.82033867703865*^9}, 3.820338813362699*^9, {3.820339353964629*^9, 
    3.820339358379874*^9}, {3.820339657537634*^9, 3.8203396611602793`*^9}, 
-   3.820341130632325*^9, 3.820454208103092*^9, 3.820454477484174*^9},
+   3.820341130632325*^9, 3.820454208103092*^9, 3.820454477484174*^9, {
+   3.820535616932214*^9, 3.8205356172679*^9}},
  CellLabel->
-  "In[2251]:=",ExpressionUUID->"0fe53cab-3f85-4af8-8cc4-213f1dcc263c"]
+  "In[3348]:=",ExpressionUUID->"0fe53cab-3f85-4af8-8cc4-213f1dcc263c"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1347,8 +1345,21 @@ Cell[BoxData[{
      "axislabelsLineComp", ",", "\[IndentingNewLine]", 
      "\"\<Holling Type II\>\"", ",", "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p2fixH2vMM", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"fixH2", ",", "fixMM"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<MM/H2\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vHV", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1360,8 +1371,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<HV/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vAG", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1373,8 +1384,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<AG/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vGI", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1386,8 +1397,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<GI/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vGIA", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1399,8 +1410,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<GIA/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vHT", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1412,8 +1423,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<HT/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vH3", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1425,8 +1436,21 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<H3/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p2fixH2vKVBA", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"fixH2", ",", "fixKVBA"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<KVBA/H2\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vA1", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1438,8 +1462,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<A1/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vA3", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1451,8 +1475,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<A3/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p2fixH2vSH", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1464,8 +1488,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SH/H2\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}]}], "Input",
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.815517317480824*^9, 3.815517346519253*^9}, 
    3.8155173924951077`*^9, {3.815518394574703*^9, 3.815518395957754*^9}, {
    3.8155184679875507`*^9, 3.815518484505745*^9}, 3.815518630325923*^9, {
@@ -1512,10 +1536,11 @@ Cell[BoxData[{
    3.82033868019118*^9, 3.8203386872384157`*^9}, {3.820338803107025*^9, 
    3.820338805906479*^9}, {3.820339362188251*^9, 3.8203393689635963`*^9}, {
    3.820341038291507*^9, 3.820341108640195*^9}, {3.820359874314138*^9, 
-   3.820359875625799*^9}},
- CellLabel->
-  "In[2253]:=",ExpressionUUID->"0db99653-dfbc-47d2-bab7-b6a2bf2058ff"]
-}, Closed]],
+   3.820359875625799*^9}, {3.8205356174928713`*^9, 3.8205356197559147`*^9}, {
+   3.820620790933495*^9, 3.8206208001406717`*^9}, {3.8206252883013697`*^9, 
+   3.820625314052052*^9}},ExpressionUUID->"0db99653-dfbc-47d2-bab7-\
+b6a2bf2058ff"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1535,8 +1560,8 @@ Cell[BoxData[{
      "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvCM", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1548,8 +1573,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<CM/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvAA", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1561,8 +1586,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<AA/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvBWL", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1574,8 +1599,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<BWL/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvH3R", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1587,8 +1612,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<H3R/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvA2", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1600,8 +1625,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<A2/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvHLB", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1613,8 +1638,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<HLB/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvMH", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1626,8 +1651,8 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<MH/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvTTA", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1639,8 +1664,21 @@ Cell[BoxData[{
      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<TTA/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p3fixBDvSBB", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"fixBD", ",", "fixSBB"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SBB/BD\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"p3fixBDvSSS", "=", 
    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
@@ -1649,11 +1687,11 @@ Cell[BoxData[{
       RowBox[{"fixBD", ",", "fixSSS"}], "]"}], ",", "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
-     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SS/BD\>\"", ",", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SSS/BD\>\"", ",", 
      "\[IndentingNewLine]", 
      RowBox[{"{", 
-      RowBox[{"All", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}]}], "Input",
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.815517317480824*^9, 3.815517346519253*^9}, 
    3.8155173924951077`*^9, {3.815518394574703*^9, 3.815518395957754*^9}, {
    3.8155184679875507`*^9, 3.815518484505745*^9}, 3.815518630325923*^9, {
@@ -1700,9 +1738,92 @@ Cell[BoxData[{
    3.820339383700107*^9, 3.82033939317861*^9}, {3.82034054952625*^9, 
    3.820340549957952*^9}, {3.820341144478817*^9, 3.820341212660174*^9}, {
    3.820359885466255*^9, 3.820359900552925*^9}, {3.8204541911205463`*^9, 
-   3.820454203191813*^9}},
+   3.820454203191813*^9}, 3.820530348038085*^9, {3.820535620124887*^9, 
+   3.82053562284396*^9}, {3.8206053238105173`*^9, 3.820605334777169*^9}},
  CellLabel->
-  "In[2263]:=",ExpressionUUID->"0e3349fb-7844-4d93-8937-1d74606f5c2f"]
+  "In[3361]:=",ExpressionUUID->"0e3349fb-7844-4d93-8937-1d74606f5c2f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["k = 4 models", "Subsubsection",
+ CellChangeTimes->{{3.820605958530205*^9, 
+  3.820605962676898*^9}},ExpressionUUID->"9ee1c16c-b644-4cee-a9c6-\
+7b884e62a802"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p4fixBDOR", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{"fixBDOR", ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineComp", ",", "\[IndentingNewLine]", "\"\<BDOR\>\"", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p4fixBDORvCMOR", "=", 
+   RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Relativize", "[", 
+      RowBox[{"fixBDOR", ",", "fixCMOR"}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+     "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<CMOR/BDOR\>\"", 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p4fixBDORvAAOR", "=", 
+    RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Relativize", "[", 
+       RowBox[{"fixBDOR", ",", "fixAAOR"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+      "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<AAOR/BDOR\>\"", 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", 
+     "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"p4fixBDORvSN1", "=", 
+     RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Relativize", "[", 
+        RowBox[{"fixBDOR", ",", "fixSN1"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+       "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SN1/BDOR\>\"", 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"p4fixBDORvSN2", "=", 
+     RowBox[{"MyListLinePlot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Relativize", "[", 
+        RowBox[{"fixBDOR", ",", "fixSN2"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "4"}], "}"}], ",", "\[IndentingNewLine]", 
+       "axislabelsLineRel", ",", "\[IndentingNewLine]", "\"\<SN2/BDOR\>\"", 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"xrange", ",", "All"}], "}"}]}], "\[IndentingNewLine]", 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "*)"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.820605968224869*^9, 3.820606022190215*^9}, {
+   3.820606068941037*^9, 3.8206062749503183`*^9}, {3.820606570418457*^9, 
+   3.820606572929799*^9}, 3.820606972169847*^9, {3.820607712654271*^9, 
+   3.820607744108827*^9}},
+ CellLabel->
+  "In[3372]:=",ExpressionUUID->"f6f1312d-31d6-42e1-b424-f458a56d4a39"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1711,6 +1832,23 @@ Cell["Combined plots - Fix", "Subsubsection",
  CellChangeTimes->{{3.82034053263172*^9, 
   3.820340547965638*^9}},ExpressionUUID->"99d7bf79-5510-4014-a74a-\
 e2365fcebb97"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PlotStyleColsFix", "=", 
+   RowBox[{"PlotStyleCols", "[", 
+    RowBox[{"[", 
+     RowBox[{"1", ";;", 
+      RowBox[{"Length", "[", 
+       RowBox[{"DeleteDuplicates", "[", 
+        RowBox[{"fixH1", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "4"}], "]"}], "]"}], "]"}], "]"}]}], "]"}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.820501537414461*^9, 3.8205015408784037`*^9}, {
+  3.820511868731613*^9, 3.820511870930394*^9}},
+ CellLabel->
+  "In[3375]:=",ExpressionUUID->"95e2439a-777c-433a-b8b4-7fa3e7228ea9"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1731,7 +1869,7 @@ Cell[BoxData[{
        RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"Map", "[", 
-          RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
+          RowBox[{"Directive", ",", "PlotStyleColsFix"}], "]"}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"DeleteDuplicates", "[", 
           RowBox[{"fixH1", "[", 
@@ -1747,988 +1885,106 @@ Cell[BoxData[{
   RowBox[{"Export", "[", 
    RowBox[{"\"\<GeomComp_fixP1.pdf\>\"", ",", "AllFixP1"}], "]"}], 
   ";"}]}], "Input",
- CellChangeTimes->{{3.820453983544465*^9, 3.820454010799018*^9}},
+ CellChangeTimes->{{3.820453983544465*^9, 3.820454010799018*^9}, {
+  3.8205015335111837`*^9, 3.820501533766491*^9}},
  CellLabel->
-  "In[2273]:=",ExpressionUUID->"015156ae-2f90-4450-a847-5ce2df7a8f66"],
-
-Cell[CellGroupData[{
+  "In[3376]:=",ExpressionUUID->"015156ae-2f90-4450-a847-5ce2df7a8f66"],
 
 Cell[BoxData[{
- RowBox[{"AllFixP2", "=", "\[IndentingNewLine]", 
-  RowBox[{"Legended", "[", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"GraphicsGrid", "[", 
-     RowBox[{
-      RowBox[{"{", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"p2fixH2", ",", "p2fixH2vHV", ",", "p2fixH2vAG"}], "}"}], 
-        ",", "\[IndentingNewLine]", 
-        RowBox[{"{", 
-         RowBox[{"p2fixH2vGI", ",", "p2fixH2vGIA", ",", "p2fixH2vHT"}], "}"}],
+ RowBox[{
+  RowBox[{"AllFixP2", "=", "\[IndentingNewLine]", 
+   RowBox[{"Legended", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"GraphicsGrid", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"p2fixH2", ",", "p2fixH2vMM", ",", "p2fixH2vHV"}], "}"}], 
          ",", "\[IndentingNewLine]", 
-        RowBox[{"{", 
-         RowBox[{"p2fixH2vH3", ",", "p2fixH2vA1", ",", "p2fixH2vA3"}], "}"}], 
-        ",", "\[IndentingNewLine]", 
-        RowBox[{"{", "p2fixH2vSH", "}"}]}], "\[IndentingNewLine]", "}"}], ",",
-       "\[IndentingNewLine]", 
-      RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
-    "\[IndentingNewLine]", 
-    RowBox[{"Placed", "[", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"Map", "[", 
-         RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"DeleteDuplicates", "[", 
-         RowBox[{"fixH1", "[", 
-          RowBox[{"[", 
-           RowBox[{"All", ",", "4"}], "]"}], "]"}], "]"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"LegendLabel", "\[Rule]", "\"\<Predator levels\>\""}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"LegendLayout", "\[Rule]", "\"\<Row\>\""}]}], "]"}], ",", 
-      "\[IndentingNewLine]", "Above"}], "]"}]}], 
-   "]"}]}], "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p2fixH2vAG", ",", "p2fixH2vGI", ",", "p2fixH2vGIA"}], 
+          "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p2fixH2vHT", ",", "p2fixH2vH3", ",", "p2fixH2vKVBA"}], 
+          "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p2fixH2vA1", ",", "p2fixH2vA3", ",", "p2fixH2vSH"}], 
+          "}"}]}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Placed", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Map", "[", 
+          RowBox[{"Directive", ",", "PlotStyleColsFix"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"fixH1", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "4"}], "]"}], "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"LegendLabel", "\[Rule]", "\"\<Predator levels\>\""}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"LegendLayout", "\[Rule]", "\"\<Row\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "Above"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Export", "[", 
    RowBox[{"\"\<GeomComp_fixP2.pdf\>\"", ",", "AllFixP2"}], "]"}], 
   ";"}]}], "Input",
- CellChangeTimes->{3.820453988504368*^9},
- CellLabel->
-  "In[2275]:=",ExpressionUUID->"1391b8e8-2053-45cb-a1e5-d6b873177739"],
-
-Cell[BoxData[
- TemplateBox[{
-   GraphicsBox[{{}, {{
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 1.5761123340681213`}, {
-              1.791759469228055, 1.5712318906811789`}, {1.9459101490553132`, 
-              1.5654607091883794`}, {2.0794415416798357`, 
-              1.5636594480299308`}, {2.1972245773362196`, 
-              1.5600062141319646`}, {2.302585092994046, 
-              1.5600552756418877`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 1.5761123340681213`}, {
-              1.791759469228055, 1.5712318906811789`}, {1.9459101490553132`, 
-              1.5654607091883794`}, {2.0794415416798357`, 
-              1.5636594480299308`}, {2.1972245773362196`, 
-              1.5600062141319646`}, {2.302585092994046, 
-              1.5600552756418877`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 1.5591114296910669`}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"Holling Type II\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           1.5591114296910669`, 1.5761123340681213`}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -120.14580741297955`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996212`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.07405504406177339}, {
-              1.791759469228055, -0.08140550976894978}, {
-              1.9459101490553132`, -0.0838658098498376}, {
-              2.0794415416798357`, -0.08848766658629688}, {
-              2.1972245773362196`, -0.08956203421842046}, {
-              2.302585092994046, -0.09387269382090703}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.1040251465220592}, {
-              1.791759469228055, -0.11178239400533203`}, {
-              1.9459101490553132`, -0.1144976577104391}, {
-              2.0794415416798357`, -0.11929733605100042`}, {
-              2.1972245773362196`, -0.12051998775538521`}, {
-              2.302585092994046, -0.12504031453827497`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.12787282956474727`}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"HV/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.12787282956474727`, -0.07405504406177339}},
-           PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        580.5, -120.14580741297955`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996212`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 0.031907511591494006`}, {
-              1.791759469228055, 0.03170171344299672}, {1.9459101490553132`, 
-              0.032042372796324096`}, {2.0794415416798357`, 
-              0.03179494152038416}, {2.1972245773362196`, 
-              0.032098613629674144`}, {2.302585092994046, 
-              0.031665307360206084`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.027485200994311988`}, {
-              1.791759469228055, 0.027258426797046202`}, {1.9459101490553132`,
-               0.0275040420789366}, {2.0794415416798357`, 
-              0.02722738758601778}, {2.1972245773362196`, 
-              0.027483531947161504`}, {2.302585092994046, 
-              0.027033198494263652`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 0.026751786542296405`}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"AG/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           0.026751786542296405`, 0.032098613629674144`}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        967.5, -120.14580741297955`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996212`}]}, {
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 0.023595083546687386`}, {
-              1.791759469228055, 0.023146484910278976`}, {1.9459101490553132`,
-               0.024513562435369816`}, {2.0794415416798357`, 
-              0.02447223443304898}, {2.1972245773362196`, 
-              0.025195239634903627`}, {2.302585092994046, 
-              0.025149504937429935`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.023595083546687386`}, {
-              1.791759469228055, 0.023146484910278976`}, {1.9459101490553132`,
-               0.024513562435369816`}, {2.0794415416798357`, 
-              0.02447223443304898}, {2.1972245773362196`, 
-              0.025195239634903627`}, {2.302585092994046, 
-              0.025149504937429935`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 0.02303266520335539}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"GI/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           0.02303266520335539, 0.025195239634903627`}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -360.43742223893867`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 0.02164172491082554}, {
-              1.791759469228055, 0.022483772035203277`}, {1.9459101490553132`,
-               0.023829633982491043`}, {2.0794415416798357`, 
-              0.02377647430162163}, {2.1972245773362196`, 
-              0.0244849778387833}, {2.302585092994046, 
-              0.024402667039090973`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.02164172491082554}, {
-              1.791759469228055, 0.022483772035203277`}, {1.9459101490553132`,
-               0.023829633982491043`}, {2.0794415416798357`, 
-              0.02377647430162163}, {2.1972245773362196`, 
-              0.0244849778387833}, {2.302585092994046, 
-              0.024402667039090973`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 0.02148376641482789}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"GIA/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           0.02148376641482789, 0.0244849778387833}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        580.5, -360.43742223893867`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.07776360285840087}, {
-              1.791759469228055, -0.08074187295705201}, {
-              1.9459101490553132`, -0.08695777294265865}, {
-              2.0794415416798357`, -0.08727632393534383}, {
-              2.1972245773362196`, -0.09185460584299487}, {
-              2.302585092994046, -0.08592887397664145}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.07776360285840087}, {
-              1.791759469228055, -0.08074187295705201}, {
-              1.9459101490553132`, -0.08695777294265865}, {
-              2.0794415416798357`, -0.08727632393534383}, {
-              2.1972245773362196`, -0.09185460584299487}, {
-              2.302585092994046, -0.08592887397664145}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.092637439342139}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"HT/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.092637439342139, -0.07776360285840087}}, 
-          PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        967.5, -360.43742223893867`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}]}, {
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 0.08562383437771956}, {
-              1.791759469228055, 0.08754003051634549}, {1.9459101490553132`, 
-              0.09006227220757305}, {2.0794415416798357`, 
-              0.0901251480820019}, {2.1972245773362196`, 
-              0.09137445179628113}, {2.302585092994046, 
-              0.09143536973070902}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.08562383437771956}, {
-              1.791759469228055, 0.08754003051634549}, {1.9459101490553132`, 
-              0.09006227220757305}, {2.0794415416798357`, 
-              0.0901251480820019}, {2.1972245773362196`, 
-              0.09137445179628113}, {2.302585092994046, 
-              0.09143536973070902}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 0.08530097130255347}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"H3/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           0.08530097130255347, 0.09143536973070902}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -600.7290370648977}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.0910232145828553}, {
-              1.791759469228055, -0.09146351248115771}, {
-              1.9459101490553132`, -0.09244918693510065}, {
-              2.0794415416798357`, -0.09247184239282857}, {
-              2.1972245773362196`, -0.09288110177615026}, {
-              2.302585092994046, -0.09287622778986374}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.0910232145828553}, {
-              1.791759469228055, -0.09146351248115783}, {
-              1.9459101490553132`, -0.09244918693509992}, {
-              2.0794415416798357`, -0.09247184239282735}, {
-              2.1972245773362196`, -0.09288110177615087}, {
-              2.302585092994046, -0.09287622778986228}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.09298431773133398}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"A1/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.09298431773133398, -0.0910232145828553}}, 
-          PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        580.5, -600.7290370648977}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.10661661979372937`}, {
-              1.791759469228055, -0.10795576047249213`}, {
-              1.9459101490553132`, -0.10997766458888736`}, {
-              2.0794415416798357`, -0.10879013239238902`}, {
-              2.1972245773362196`, -0.10980151495885512`}, {
-              2.302585092994046, -0.10998492164701858`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.10661661979372937`}, {
-              1.791759469228055, -0.10795576047249213`}, {
-              1.9459101490553132`, -0.10997766458888736`}, {
-              2.0794415416798357`, -0.10879013239238902`}, {
-              2.1972245773362196`, -0.10980151495885512`}, {
-              2.302585092994046, -0.10998492164701858`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.11017204952775687`}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"A3/H2\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.11017204952775687`, -0.10661661979372937`}}
-           , PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        967.5, -600.7290370648977}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}]}, {
-       InsetBox[
-        GraphicsBox[{{}, {}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {-0.020833333333333336`, -0.05555555555555556}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"SH/H2\"", TraditionalForm], 
-          PlotRange -> {{-0.020833333333333336`, 1}, {-0.05555555555555556, 
-             1}}, PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -841.0206518908569}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996204`}], 
-       TagBox[
-        InsetBox[
-        "", {580.5, -841.0206518908569}, {Center, Center}, {360., 
-         222.49223594996204`}], "InsetString"], 
-       TagBox[
-        InsetBox[
-        "", {967.5, -841.0206518908569}, {Center, Center}, {360., 
-         222.49223594996204`}], "InsetString"]}}, {}}, ImageSize -> Large, {
-    PlotRangePadding -> {6, 5}}, ImageSize -> Large], 
-   FormBox[
-    FormBox[
-     TemplateBox[{"2", "3"}, "LineLegend", DisplayFunction -> (FormBox[
-        StyleBox[
-         StyleBox[
-          PaneBox[
-           TagBox[
-            GridBox[{{
-               StyleBox[
-               "\"Predator levels\"", {FontFamily -> "Arial"}, Background -> 
-                Automatic, StripOnInput -> False]}, {
-               TagBox[
-                GridBox[{{
-                   TagBox[
-                    GridBox[{{
-                    GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0]], {
-                    LineBox[{{0, 10}, {40, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {40, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #, 
-                    GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0.7], 
-                    Dashing[{Small, Small}]], {
-                    LineBox[{{0, 10}, {40, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0.7], 
-                    Dashing[{Small, Small}]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {40, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
-                    AutoDelete -> False, 
-                    GridBoxDividers -> {
-                    "Columns" -> {{False}}, "Rows" -> {{False}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{All}}, "Rows" -> {{All}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{0.8, 0.5}}}], 
-                    "Grid"]}}, 
-                 GridBoxAlignment -> {
-                  "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                 False, GridBoxDividers -> {
-                  "Columns" -> {{None}}, "Rows" -> {{None}}}, 
-                 GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}},
-                  GridBoxSpacings -> {"Columns" -> {{0}}, "Rows" -> {{1}}}], 
-                "Grid"]}}, GridBoxAlignment -> {"Columns" -> {{Center}}}, 
-             AutoDelete -> False, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-           Alignment -> Left, AppearanceElements -> None, 
-           ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> 
-           "ResizeToFit"], LineIndent -> 0, StripOnInput -> False], {
-         FontFamily -> "Arial"}, Background -> Automatic, StripOnInput -> 
-         False], TraditionalForm]& ), 
-      InterpretationFunction :> (RowBox[{"LineLegend", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{
-               RowBox[{"Directive", "[", 
-                 RowBox[{"{", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> GrayLevel[0.], FrameTicks -> None, 
-                    PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    StyleBox[
-                    RowBox[{"GrayLevel", "[", "0", "]"}], NumberMarks -> 
-                    False]], Appearance -> None, BaseStyle -> {}, 
-                    BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    GrayLevel[0]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["GrayLevelColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    GrayLevel[0], Editable -> False, Selectable -> False], 
-                   "}"}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{"{", 
-                   RowBox[{
-                    InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    GrayLevel[0.7], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> GrayLevel[0.4666666666666667], FrameTicks -> 
-                    None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    StyleBox[
-                    RowBox[{"GrayLevel", "[", "0.7`", "]"}], NumberMarks -> 
-                    False]], Appearance -> None, BaseStyle -> {}, 
-                    BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    GrayLevel[0.7]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["GrayLevelColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    GrayLevel[0.7], Editable -> False, Selectable -> False], 
-                    ",", 
-                    RowBox[{"Dashing", "[", 
-                    RowBox[{"{", 
-                    RowBox[{"Small", ",", "Small"}], "}"}], "]"}]}], "}"}], 
-                 "]"}]}], "}"}], ",", 
-           RowBox[{"{", 
-             RowBox[{#, ",", #2}], "}"}], ",", 
-           RowBox[{"LegendLabel", "\[Rule]", "\"Predator levels\""}], ",", 
-           RowBox[{"LegendLayout", "\[Rule]", "\"Row\""}]}], "]"}]& ), 
-      Editable -> True], TraditionalForm], TraditionalForm]},
-  "Legended",
-  DisplayFunction->(GridBox[{{
-      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
-      TagBox[
-       ItemBox[
-        PaneBox[
-         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
-         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
-       "SkipImageSizeLevel"]}}, 
-    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
-    AutoDelete -> False, GridBoxItemSize -> Automatic, 
-    BaselinePosition -> {2, 1}]& ),
-  Editable->True,
-  InterpretationFunction->(RowBox[{"Legended", "[", 
-     RowBox[{#, ",", 
-       RowBox[{"Placed", "[", 
-         RowBox[{#2, ",", "Above"}], "]"}]}], "]"}]& )]], "Output",
- CellChangeTimes->{3.820454133182583*^9, 3.820454507908134*^9},
- CellLabel->
-  "Out[2275]=",ExpressionUUID->"74e83541-b64c-4c64-bf7a-a3411a375b82"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellChangeTimes->{
+  3.820453988504368*^9, {3.820501047513576*^9, 3.820501052007928*^9}, {
+   3.820501547870493*^9, 3.820501548118017*^9}, 3.820501598541388*^9, {
+   3.8206208097894487`*^9, 3.820620814076435*^9}, {3.820625331763431*^9, 
+   3.8206253583536453`*^9}},ExpressionUUID->"1391b8e8-2053-45cb-a1e5-\
+d6b873177739"],
 
 Cell[BoxData[{
- RowBox[{"AllFixP3", "=", "\[IndentingNewLine]", 
-  RowBox[{"Legended", "[", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"GraphicsGrid", "[", 
-     RowBox[{
-      RowBox[{"{", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"p3fixBD", ",", "p3fixBDvCM", ",", "p3fixBDvAA"}], "}"}], 
-        ",", "\[IndentingNewLine]", 
-        RowBox[{"{", 
-         RowBox[{"p3fixBDvBWL", ",", "p3fixBDvH3R", ",", "p3fixBDvA2"}], 
-         "}"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"{", 
-         RowBox[{"p3fixBDvHLB", ",", "p3fixBDvMH", ",", "p3fixBDvTTA"}], 
-         "}"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"{", "p3fixBDvSSS", "}"}]}], "\[IndentingNewLine]", "}"}], 
-      ",", "\[IndentingNewLine]", 
-      RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
-    "\[IndentingNewLine]", 
-    RowBox[{"Placed", "[", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"Map", "[", 
-         RowBox[{"Directive", ",", "PlotStyleCols"}], "]"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"DeleteDuplicates", "[", 
-         RowBox[{"fixH1", "[", 
-          RowBox[{"[", 
-           RowBox[{"All", ",", "4"}], "]"}], "]"}], "]"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"LegendLabel", "\[Rule]", "\"\<Predator levels\>\""}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"LegendLayout", "\[Rule]", "\"\<Row\>\""}]}], "]"}], ",", 
-      "\[IndentingNewLine]", "Above"}], "]"}]}], 
-   "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<GeomComp_fixP3.pdf\>\"", ",", "AllFixP3"}], "]"}], ";"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+  RowBox[{"AllFixP3", "=", "\[IndentingNewLine]", 
+   RowBox[{"Legended", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"GraphicsGrid", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"p3fixBD", ",", "p3fixBDvCM", ",", "p3fixBDvAA"}], "}"}], 
+         ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p3fixBDvBWL", ",", "p3fixBDvH3R", ",", "p3fixBDvA2"}], 
+          "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p3fixBDvHLB", ",", "p3fixBDvMH", ",", "p3fixBDvTTA"}], 
+          "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"p3fixBDvSBB", ",", "p3fixBDvSSS"}], "}"}]}], 
+        "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Placed", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Map", "[", 
+          RowBox[{"Directive", ",", "PlotStyleColsFix"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"fixH1", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "4"}], "]"}], "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"LegendLabel", "\[Rule]", "\"\<Predator levels\>\""}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"LegendLayout", "\[Rule]", "\"\<Row\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "Above"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<GeomComp_fixP3.pdf\>\"", ",", "AllFixP3"}], "]"}], 
+  ";"}]}], "Input",
  CellChangeTimes->{{3.8158480144639807`*^9, 3.81584801479465*^9}, {
    3.8167020672592697`*^9, 3.8167020981185293`*^9}, {3.816702217907485*^9, 
    3.816702266543577*^9}, {3.816702306648057*^9, 3.81670230681402*^9}, {
@@ -2744,884 +2000,64 @@ Cell[BoxData[{
    3.82034055309447*^9, 3.820340617683937*^9}, 3.820340671266377*^9, {
    3.820340917920864*^9, 3.820340973599662*^9}, {3.820341007300707*^9, 
    3.820341023933209*^9}, {3.8203601925511913`*^9, 3.820360204070426*^9}, {
-   3.820453700701803*^9, 3.820453713386387*^9}, 3.8204539934641523`*^9},
+   3.820453700701803*^9, 3.820453713386387*^9}, 3.8204539934641523`*^9, {
+   3.820501559622498*^9, 3.8205015604882917`*^9}, 3.8205303617494926`*^9, {
+   3.820605304708102*^9, 3.820605309842189*^9}, {3.820606382320732*^9, 
+   3.8206063826805162`*^9}},
  CellLabel->
-  "In[2277]:=",ExpressionUUID->"43b08569-14a9-43f9-8189-04d27008f5d9"],
+  "In[3380]:=",ExpressionUUID->"43b08569-14a9-43f9-8189-04d27008f5d9"],
 
-Cell[BoxData[
- TemplateBox[{
-   GraphicsBox[{{}, {{
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 1.9690003931395526`}, {
-              1.791759469228055, 1.964123606120004}, {1.9459101490553132`, 
-              1.9588030985613487`}, {2.0794415416798357`, 
-              1.9573551793987465`}, {2.1972245773362196`, 
-              1.9542078403862038`}, {2.302585092994046, 
-              1.9539038554247161`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 1.9361874117321691`}, {
-              1.791759469228055, 1.9312400279392117`}, {1.9459101490553132`, 
-              1.9269668793383679`}, {2.0794415416798357`, 
-              1.9248340319820811`}, {2.1972245773362196`, 
-              1.921631151699025}, {2.302585092994046, 
-              1.921186215377012}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 1.918529872167982}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           1.918529872167982, 1.9690003931395526`}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -120.14580741297955`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996212`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 0.04071455378518713}, {
-              1.791759469228055, 0.04212090859545133}, {1.9459101490553132`, 
-              0.04363891079276838}, {2.0794415416798357`, 
-              0.04360346666270833}, {2.1972245773362196`, 
-              0.04429742455886504}, {2.302585092994046, 
-              0.044689229769128355`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.05153364297677492}, {
-              1.791759469228055, 0.05293626485136819}, {1.9459101490553132`, 
-              0.05303165929432676}, {2.0794415416798357`, 
-              0.05364780581313566}, {2.1972245773362196`, 
-              0.05424709689512513}, {2.302585092994046, 
-              0.05468251578943604}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 0.03993855589606219}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"CM/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           0.03993855589606219, 0.05468251578943604}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        580.5, -120.14580741297955`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996212`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.0025472995235210827`}, {
-              1.791759469228055, -0.002454981497088383}, {
-              1.9459101490553132`, -0.001972729752574508}, {
-              2.0794415416798357`, -0.0025744768761789853`}, {
-              2.1972245773362196`, -0.003221023336318223}, {
-              2.302585092994046, -0.0032722988580723895`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.056416154193205906`}, {
-              1.791759469228055, 0.05780476571506668}, {1.9459101490553132`, 
-              0.05908578421831199}, {2.0794415416798357`, 
-              0.05949334429638485}, {2.1972245773362196`, 
-              0.06052360858698364}, {2.302585092994046, 
-              0.06041050836462415}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.006816515938353281}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"AA/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.006816515938353281, 0.06052360858698364}}, 
-          PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        967.5, -120.14580741297955`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996212`}]}, {
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, 0.023142277020537564`}, {
-              1.791759469228055, 0.021320645901268215`}, {1.9459101490553132`,
-               0.021036724925448686`}, {2.0794415416798357`, 
-              0.018436043341784596`}, {2.1972245773362196`, 
-              0.015778053934323178`}, {2.302585092994046, 
-              0.01456450408476473}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, 0.030407528111127888`}, {
-              1.791759469228055, 0.026412299800375152`}, {1.9459101490553132`,
-               0.025586900669033814`}, {2.0794415416798357`, 
-              0.02674395029946109}, {2.1972245773362196`, 
-              0.026395762083014692`}, {2.302585092994046, 
-              0.024623867456310407`}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, 0.013684336083300112`}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"BWL/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 2.302585092994046}, {
-           0.013684336083300112`, 0.030407528111127888`}}, PlotRangeClipping -> 
-          True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -360.43742223893867`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.12297724113193083`}, {
-              1.791759469228055, -0.10644641170532895`}, {
-              1.9459101490553132`, -0.10079395097615465`}, {
-              2.0794415416798357`, -0.09410028953012498}, {
-              2.1972245773362196`, -0.09235194765263864}, {
-              2.302585092994046, -0.09046861457157084}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.09016425972489045}, {
-              1.791759469228055, -0.0735628335245478}, {
-              1.9459101490553132`, -0.06895773175320852}, {
-              2.0794415416798357`, -0.061579142113455256`}, {
-              2.1972245773362196`, -0.05977525896544974}, {
-              2.302585092994046, -0.05775097452386403}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.12660092261015676`}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"H3R/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.12660092261015676`, -0.05775097452386403}},
-           PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        580.5, -360.43742223893867`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.6597242304100761}, {
-              1.791759469228055, -0.6686628970294689}, {
-              1.9459101490553132`, -0.6806581104724603}, {
-              2.0794415416798357`, -0.6859188741301296}, {
-              2.1972245773362196`, -0.692388283185059}, {
-              2.302585092994046, -0.6931214163470725}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.62691124899795}, {
-              1.791759469228055, -0.6357793188482707}, {
-              1.9459101490553132`, -0.6488218912435749}, {
-              2.0794415416798357`, -0.6533977267063964}, {
-              2.1972245773362196`, -0.6598115944974584}, {
-              2.302585092994046, -0.6604037763128373}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.6967997589775793}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"A2/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.6967997589775793, -0.62691124899795}}, 
-          PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        967.5, -360.43742223893867`}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}]}, {
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.3505418745866159}, {
-              1.791759469228055, -0.3523421093764096}, {
-              1.9459101490553132`, -0.3512194366609832}, {
-              2.0794415416798357`, -0.35405220032125084`}, {
-              2.1972245773362196`, -0.354821358982227}, {
-              2.302585092994046, -0.3556486256653788}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.31772889317923225`}, {
-              1.791759469228055, -0.31945853119561735`}, {
-              1.9459101490553132`, -0.31938321743800224`}, {
-              2.0794415416798357`, -0.3215310529045855}, {
-              2.1972245773362196`, -0.3222446702950482}, {
-              2.302585092994046, -0.3229309856176746}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.3577552774701647}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"HLB/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.3577552774701647, -0.31772889317923225`}}, 
-          PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -600.7290370648977}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {-0.020833333333333336`, -0.05555555555555556}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"MH/BD\"", TraditionalForm], 
-          PlotRange -> {{-0.020833333333333336`, 1}, {-0.05555555555555556, 
-             1}}, PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        580.5, -600.7290370648977}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}], 
-       InsetBox[
-        GraphicsBox[{{}, {{{}, {}, {
-             Hue[0.67, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0]], 
-             
-             LineBox[{{1.6094379124341003`, -0.3744048982663531}, {
-              1.791759469228055, -0.37515867008774606`}, {
-              1.9459101490553132`, -0.3748207825159139}, {
-              2.0794415416798357`, -0.3761978058586353}, {
-              2.1972245773362196`, -0.37615927990799664`}, {
-              2.302585092994046, -0.37771887425688055`}}]}, {
-             Hue[0.9060679774997897, 0.6, 0.6], 
-             Directive[
-              PointSize[
-               NCache[
-                Rational[7, 360], 0.019444444444444445`]], 
-              AbsoluteThickness[1.6], 
-              GrayLevel[0.7], 
-              Dashing[{Small, Small}]], 
-             
-             LineBox[{{1.6094379124341003`, -0.3735536640169004}, {
-              1.791759469228055, -0.37425278175168936`}, {
-              1.9459101490553132`, -0.3750493069820727}, {
-              2.0794415416798357`, -0.3756549924141706}, {
-              2.1972245773362196`, -0.37608526607894416`}, {
-              2.302585092994046, -0.3770631873208692}}]}}}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {1.594997346172435, -0.3779502748257684}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"TTA/BD\"", TraditionalForm], 
-          PlotRange -> {{1.594997346172435, 
-           2.302585092994046}, {-0.3779502748257684, -0.3735536640169004}}, 
-          PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        967.5, -600.7290370648977}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996215`}]}, {
-       InsetBox[
-        GraphicsBox[{{}, {}, {{}, {}}}, {
-         DisplayFunction -> Identity, DisplayFunction -> Identity, 
-          AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
-          Axes -> {True, True}, AxesLabel -> {None, None}, 
-          AxesOrigin -> {-0.020833333333333336`, -0.05555555555555556}, 
-          DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
-          FrameLabel -> {{
-             FormBox["\"Relative flexibility\"", TraditionalForm], None}, {
-             FormBox["\"Prey levels\"", TraditionalForm], None}}, 
-          FrameTicks -> {{Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}, {Quiet[
-              Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-             Charting`ScaledFrameTicks[{Log, Exp}]}}, 
-          GridLines -> {None, {0}}, GridLinesStyle -> Directive[
-            GrayLevel[0.85], 
-            Dashing[{Small, Small}]], 
-          Method -> {
-           "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-            "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-                Exp[
-                 Part[#, 1]], 
-                Exp[
-                 Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"SS/BD\"", TraditionalForm], 
-          PlotRange -> {{-0.020833333333333336`, 1}, {-0.05555555555555556, 
-             1}}, PlotRangeClipping -> True, PlotRangePadding -> {{
-             Scaled[0.02], 
-             Scaled[0.02]}, {
-             Scaled[0.02], 
-             Scaled[0.05]}}, Ticks -> {Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , Quiet[
-             Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }}], {
-        193.5, -841.0206518908569}, 
-        ImageScaled[{0.5, 0.5}], {360., 222.49223594996204`}], 
-       TagBox[
-        InsetBox[
-        "", {580.5, -841.0206518908569}, {Center, Center}, {360., 
-         222.49223594996204`}], "InsetString"], 
-       TagBox[
-        InsetBox[
-        "", {967.5, -841.0206518908569}, {Center, Center}, {360., 
-         222.49223594996204`}], "InsetString"]}}, {}}, ImageSize -> Large, {
-    PlotRangePadding -> {6, 5}}, ImageSize -> Large], 
-   FormBox[
-    FormBox[
-     TemplateBox[{"2", "3"}, "LineLegend", DisplayFunction -> (FormBox[
-        StyleBox[
-         StyleBox[
-          PaneBox[
-           TagBox[
-            GridBox[{{
-               StyleBox[
-               "\"Predator levels\"", {FontFamily -> "Arial"}, Background -> 
-                Automatic, StripOnInput -> False]}, {
-               TagBox[
-                GridBox[{{
-                   TagBox[
-                    GridBox[{{
-                    GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0]], {
-                    LineBox[{{0, 10}, {40, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {40, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #, 
-                    GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0.7], 
-                    Dashing[{Small, Small}]], {
-                    LineBox[{{0, 10}, {40, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.5], 
-                    AbsoluteThickness[1.6], 
-                    GrayLevel[0.7], 
-                    Dashing[{Small, Small}]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {40, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
-                    AutoDelete -> False, 
-                    GridBoxDividers -> {
-                    "Columns" -> {{False}}, "Rows" -> {{False}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{All}}, "Rows" -> {{All}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{0.8, 0.5}}}], 
-                    "Grid"]}}, 
-                 GridBoxAlignment -> {
-                  "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                 False, GridBoxDividers -> {
-                  "Columns" -> {{None}}, "Rows" -> {{None}}}, 
-                 GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}},
-                  GridBoxSpacings -> {"Columns" -> {{0}}, "Rows" -> {{1}}}], 
-                "Grid"]}}, GridBoxAlignment -> {"Columns" -> {{Center}}}, 
-             AutoDelete -> False, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-           Alignment -> Left, AppearanceElements -> None, 
-           ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> 
-           "ResizeToFit"], LineIndent -> 0, StripOnInput -> False], {
-         FontFamily -> "Arial"}, Background -> Automatic, StripOnInput -> 
-         False], TraditionalForm]& ), 
-      InterpretationFunction :> (RowBox[{"LineLegend", "[", 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AllFixP4", "=", "\[IndentingNewLine]", 
+   RowBox[{"Legended", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"GraphicsGrid", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"p4fixBDOR", ",", "p4fixBDORvCMOR", ",", "p4fixBDORvAAOR"}], 
+         "}"}], "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"p4fixBDORvSN1", ",", "p4fixBDORvSN2"}], "}"}]}], 
+         "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Placed", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"LineLegend", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Map", "[", 
+          RowBox[{"Directive", ",", "PlotStyleColsFix"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"fixH1", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "4"}], "]"}], "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
          RowBox[{
-           RowBox[{"{", 
-             RowBox[{
-               RowBox[{"Directive", "[", 
-                 RowBox[{"{", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> GrayLevel[0.], FrameTicks -> None, 
-                    PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    StyleBox[
-                    RowBox[{"GrayLevel", "[", "0", "]"}], NumberMarks -> 
-                    False]], Appearance -> None, BaseStyle -> {}, 
-                    BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    GrayLevel[0]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["GrayLevelColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    GrayLevel[0], Editable -> False, Selectable -> False], 
-                   "}"}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{"{", 
-                   RowBox[{
-                    InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    GrayLevel[0.7], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
-                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
-                    FrameStyle -> GrayLevel[0.4666666666666667], FrameTicks -> 
-                    None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    StyleBox[
-                    RowBox[{"GrayLevel", "[", "0.7`", "]"}], NumberMarks -> 
-                    False]], Appearance -> None, BaseStyle -> {}, 
-                    BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    GrayLevel[0.7]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["GrayLevelColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    GrayLevel[0.7], Editable -> False, Selectable -> False], 
-                    ",", 
-                    RowBox[{"Dashing", "[", 
-                    RowBox[{"{", 
-                    RowBox[{"Small", ",", "Small"}], "}"}], "]"}]}], "}"}], 
-                 "]"}]}], "}"}], ",", 
-           RowBox[{"{", 
-             RowBox[{#, ",", #2}], "}"}], ",", 
-           RowBox[{"LegendLabel", "\[Rule]", "\"Predator levels\""}], ",", 
-           RowBox[{"LegendLayout", "\[Rule]", "\"Row\""}]}], "]"}]& ), 
-      Editable -> True], TraditionalForm], TraditionalForm]},
-  "Legended",
-  DisplayFunction->(GridBox[{{
-      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
-      TagBox[
-       ItemBox[
-        PaneBox[
-         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
-         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
-       "SkipImageSizeLevel"]}}, 
-    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
-    AutoDelete -> False, GridBoxItemSize -> Automatic, 
-    BaselinePosition -> {2, 1}]& ),
-  Editable->True,
-  InterpretationFunction->(RowBox[{"Legended", "[", 
-     RowBox[{#, ",", 
-       RowBox[{"Placed", "[", 
-         RowBox[{#2, ",", "Above"}], "]"}]}], "]"}]& )]], "Output",
- CellChangeTimes->{
-  3.8167025366455927`*^9, 3.8167026604117327`*^9, {3.816702713996039*^9, 
-   3.816702744196138*^9}, 3.816702792493794*^9, 3.816705146542412*^9, 
-   3.816713057940567*^9, 3.8167247308275843`*^9, 3.8167260622017307`*^9, 
-   3.81678115929056*^9, 3.816781238451981*^9, 3.81678126945457*^9, 
-   3.816781312202056*^9, {3.8167813446714373`*^9, 3.816781385432398*^9}, 
-   3.817326304133112*^9, 3.817326472291321*^9, 3.8173266039890423`*^9, 
-   3.8173266760991077`*^9, 3.81732692852313*^9, 3.8173270517664413`*^9, {
-   3.819242899524908*^9, 3.81924292221097*^9}, 3.8192429766759863`*^9, 
-   3.8203387244259987`*^9, 3.820338759880466*^9, 3.8203388434951897`*^9, 
-   3.820339012071887*^9, 3.8203395836562977`*^9, 3.820339678374194*^9, 
-   3.820340622346551*^9, 3.8203412622944393`*^9, 3.820359914145462*^9, 
-   3.820360143081398*^9, 3.8203610742614737`*^9, 3.820439949660379*^9, 
-   3.820439989991849*^9, 3.8204400358044987`*^9, 3.820442626264719*^9, 
-   3.820454137871489*^9, 3.820454512591729*^9},
+         "LegendLabel", "\[Rule]", "\"\<Max. predator abundance\>\""}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"LegendLayout", "\[Rule]", "\"\<Row\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "Above"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<GeomComp_fixP4.pdf\>\"", ",", "AllFixP4"}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.820606389064818*^9, 3.8206064207526903`*^9}, {
+  3.8206064638143473`*^9, 3.820606470549178*^9}},
  CellLabel->
-  "Out[2277]=",ExpressionUUID->"c96ee44a-cee4-4e65-a716-69ef1152c91d"]
-}, Open  ]]
+  "In[3382]:=",ExpressionUUID->"00f676cd-4545-463d-bce7-957bd97e688b"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1238, 1213},
-WindowMargins->{{Automatic, 381}, {Automatic, 0}},
+WindowSize->{1148, 1262},
+WindowMargins->{{Automatic, 310}, {Automatic, 12}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
@@ -3644,76 +2080,75 @@ Cell[CellGroupData[{
 Cell[806, 29, 157, 3, 84, "Section",ExpressionUUID->"7f7c2a79-7cbe-4a15-8122-e16ce1ee1f77"],
 Cell[CellGroupData[{
 Cell[988, 36, 2091, 46, 142, "Input",ExpressionUUID->"0c00a49f-9df7-4d76-9874-5b4865d96a49"],
-Cell[3082, 84, 2949, 48, 173, "Output",ExpressionUUID->"1dda7b33-0d8c-47fc-a34b-af68d2679602"]
+Cell[3082, 84, 3816, 61, 225, "Output",ExpressionUUID->"00de21d3-8e72-4514-b96e-b9493a675307"]
 }, Open  ]],
-Cell[6046, 135, 425, 12, 73, "Text",ExpressionUUID->"bc8521ce-46d4-43a3-aa01-fe4c426ca54f"],
+Cell[6913, 148, 425, 12, 73, "Text",ExpressionUUID->"bc8521ce-46d4-43a3-aa01-fe4c426ca54f"],
 Cell[CellGroupData[{
-Cell[6496, 151, 314, 6, 37, "Input",ExpressionUUID->"d4b5d756-95be-4b7b-a925-4481e703a331"],
-Cell[6813, 159, 1640, 35, 295, "Output",ExpressionUUID->"cab521e3-2a64-49c3-8c76-b1f0483df857"]
+Cell[7363, 164, 362, 6, 37, "Input",ExpressionUUID->"d4b5d756-95be-4b7b-a925-4481e703a331"],
+Cell[7728, 172, 3174, 62, 735, "Output",ExpressionUUID->"cc7ff6c6-e2af-4b59-978d-bffefdb45f0e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8490, 199, 445, 9, 67, "Subsection",ExpressionUUID->"0018b4b1-b12f-428f-9ef7-5389169b4ea7"],
-Cell[8938, 210, 360, 7, 44, "Text",ExpressionUUID->"4feccc87-384b-4496-acba-eba7f0fd4dc8"],
-Cell[9301, 219, 1784, 38, 64, "Input",ExpressionUUID->"687b2a81-889a-4748-937a-9a078e6f818a"],
-Cell[11088, 259, 6890, 122, 558, "Input",ExpressionUUID->"735164d9-3203-4292-ad14-44c18b28f061"]
+Cell[10939, 239, 445, 9, 67, "Subsection",ExpressionUUID->"0018b4b1-b12f-428f-9ef7-5389169b4ea7"],
+Cell[11387, 250, 529, 10, 73, "Text",ExpressionUUID->"4feccc87-384b-4496-acba-eba7f0fd4dc8"],
+Cell[11919, 262, 2112, 44, 90, "Input",ExpressionUUID->"687b2a81-889a-4748-937a-9a078e6f818a"],
+Cell[14034, 308, 152, 3, 37, "Input",ExpressionUUID->"65696f40-73a3-45ba-974c-c9072eba0f43"],
+Cell[14189, 313, 8490, 153, 662, "Input",ExpressionUUID->"735164d9-3203-4292-ad14-44c18b28f061"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18027, 387, 271, 6, 84, "Section",ExpressionUUID->"1dcf95c5-15ef-46c0-b417-f659bc7e29ef"],
-Cell[18301, 395, 922, 25, 116, "Input",ExpressionUUID->"8a60042e-2af2-43a3-8c9a-4b82d539bfff"],
+Cell[22728, 472, 271, 6, 84, "Section",ExpressionUUID->"1dcf95c5-15ef-46c0-b417-f659bc7e29ef"],
+Cell[23002, 480, 1177, 32, 142, "Input",ExpressionUUID->"8a60042e-2af2-43a3-8c9a-4b82d539bfff"],
 Cell[CellGroupData[{
-Cell[19248, 424, 165, 3, 56, "Subsubsection",ExpressionUUID->"6e78963d-66c4-4871-a9cf-4abda647a9e2"],
-Cell[19416, 429, 2501, 45, 376, "Input",ExpressionUUID->"14f21cb8-243d-4eb2-9bdf-c9891575d5b3"]
+Cell[24204, 516, 165, 3, 56, "Subsubsection",ExpressionUUID->"6e78963d-66c4-4871-a9cf-4abda647a9e2"],
+Cell[24372, 521, 2609, 47, 376, "Input",ExpressionUUID->"14f21cb8-243d-4eb2-9bdf-c9891575d5b3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21954, 479, 163, 3, 56, "Subsubsection",ExpressionUUID->"58924c3b-c717-4ac1-8302-ef3afe9a39e4"],
-Cell[22120, 484, 6612, 147, 1832, "Input",ExpressionUUID->"37e286e1-45e4-42a5-9180-cabe5205f2ed"]
-}, Closed]],
+Cell[27018, 573, 163, 3, 56, "Subsubsection",ExpressionUUID->"58924c3b-c717-4ac1-8302-ef3afe9a39e4"],
+Cell[27184, 578, 7853, 174, 2196, "Input",ExpressionUUID->"37e286e1-45e4-42a5-9180-cabe5205f2ed"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[28769, 636, 212, 4, 45, "Subsubsection",ExpressionUUID->"17efa027-d874-4811-a01c-e23ea95c00bb"],
-Cell[28984, 642, 6685, 147, 1884, "Input",ExpressionUUID->"c627ece8-31a5-446a-a187-f269403c829f"],
+Cell[35074, 757, 212, 4, 56, "Subsubsection",ExpressionUUID->"17efa027-d874-4811-a01c-e23ea95c00bb"],
+Cell[35289, 763, 7390, 162, 2014, "Input",ExpressionUUID->"c627ece8-31a5-446a-a187-f269403c829f"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[35694, 793, 123, 2, 37, "Input",ExpressionUUID->"40c648fb-0402-4dd9-81b4-87e2db0d3f9b"],
-Cell[35820, 797, 3601, 97, 70, "Output",ExpressionUUID->"7c22bd7b-61bd-47ab-8233-f840205a2687"]
+Cell[42716, 930, 163, 3, 56, "Subsubsection",ExpressionUUID->"64f11ebe-be10-49fe-9465-118008debe8d"],
+Cell[42882, 935, 3060, 70, 1000, "Input",ExpressionUUID->"3e610904-bb9d-460e-9ea7-f3fa79621b74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45979, 1010, 173, 3, 56, "Subsubsection",ExpressionUUID->"a5bfee81-7511-4a24-b263-1486d49c543f"],
+Cell[46155, 1015, 542, 15, 37, "Input",ExpressionUUID->"601736da-5f94-4068-b3df-065ace183fa7"],
+Cell[46700, 1032, 2747, 54, 376, "Input",ExpressionUUID->"2c5b9b4c-0f5d-4b06-9e4e-537a9720aa80"],
+Cell[49450, 1088, 2101, 49, 454, "Input",ExpressionUUID->"b36da3f0-e7f1-47e0-8e40-823f19a2153a"],
+Cell[51554, 1139, 2106, 50, 454, "Input",ExpressionUUID->"8c28f538-537c-4e15-8f7f-5fd839385806"],
+Cell[53663, 1191, 1862, 44, 480, "Input",ExpressionUUID->"7b555f5a-5407-47c1-8c4c-880ccdb42097"]
 }, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[39470, 900, 173, 3, 45, "Subsubsection",ExpressionUUID->"a5bfee81-7511-4a24-b263-1486d49c543f"],
-Cell[CellGroupData[{
-Cell[39668, 907, 621, 15, 116, "Input",ExpressionUUID->"8b1e7e03-1d35-47cb-b502-7fee5e2675b1"],
-Cell[40292, 924, 7765, 167, 70, "Output",ExpressionUUID->"b71315c0-4ca8-4ae7-93ca-ce142ba4559e"]
-}, Open  ]],
-Cell[48072, 1094, 2698, 54, 376, "Input",ExpressionUUID->"2c5b9b4c-0f5d-4b06-9e4e-537a9720aa80"],
-Cell[50773, 1150, 1905, 46, 454, "Input",ExpressionUUID->"b36da3f0-e7f1-47e0-8e40-823f19a2153a"],
-Cell[52681, 1198, 1910, 46, 454, "Input",ExpressionUUID->"8c28f538-537c-4e15-8f7f-5fd839385806"]
-}, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54640, 1250, 267, 6, 84, "Section",ExpressionUUID->"29f942ce-455c-4d7a-bdd4-5212f65ed6a9"],
-Cell[54910, 1258, 930, 25, 116, "Input",ExpressionUUID->"feb1130c-7404-4962-a966-4f64f061cf71"],
+Cell[55574, 1241, 267, 6, 84, "Section",ExpressionUUID->"29f942ce-455c-4d7a-bdd4-5212f65ed6a9"],
+Cell[55844, 1249, 1182, 31, 142, "Input",ExpressionUUID->"feb1130c-7404-4962-a966-4f64f061cf71"],
 Cell[CellGroupData[{
-Cell[55865, 1287, 190, 3, 56, "Subsubsection",ExpressionUUID->"1cb375ab-7056-4c54-8552-d4d90da1e138"],
-Cell[56058, 1292, 1822, 36, 376, "Input",ExpressionUUID->"0fe53cab-3f85-4af8-8cc4-213f1dcc263c"]
+Cell[57051, 1284, 190, 3, 56, "Subsubsection",ExpressionUUID->"1cb375ab-7056-4c54-8552-d4d90da1e138"],
+Cell[57244, 1289, 1876, 37, 376, "Input",ExpressionUUID->"0fe53cab-3f85-4af8-8cc4-213f1dcc263c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57917, 1333, 193, 4, 56, "Subsubsection",ExpressionUUID->"ec0ad8fa-c781-4ce6-842a-f49a29a2ed3d"],
-Cell[58113, 1339, 8862, 177, 1832, "Input",ExpressionUUID->"0db99653-dfbc-47d2-bab7-b6a2bf2058ff"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[67012, 1521, 188, 4, 45, "Subsubsection",ExpressionUUID->"a5fffc9d-7354-4c38-95c1-b7103c42ad56"],
-Cell[67203, 1527, 8845, 177, 1832, "Input",ExpressionUUID->"0e3349fb-7844-4d93-8937-1d74606f5c2f"]
+Cell[59157, 1331, 193, 4, 56, "Subsubsection",ExpressionUUID->"ec0ad8fa-c781-4ce6-842a-f49a29a2ed3d"],
+Cell[59353, 1337, 10111, 204, 2196, "Input",ExpressionUUID->"0db99653-dfbc-47d2-bab7-b6a2bf2058ff"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[76085, 1709, 170, 3, 56, "Subsubsection",ExpressionUUID->"99d7bf79-5510-4014-a74a-e2365fcebb97"],
-Cell[76258, 1714, 1535, 37, 376, "Input",ExpressionUUID->"015156ae-2f90-4450-a847-5ce2df7a8f66"],
-Cell[CellGroupData[{
-Cell[77818, 1755, 1834, 44, 454, "Input",ExpressionUUID->"1391b8e8-2053-45cb-a1e5-d6b873177739"],
-Cell[79655, 1801, 41910, 882, 683, "Output",ExpressionUUID->"74e83541-b64c-4c64-bf7a-a3411a375b82"]
+Cell[69501, 1546, 188, 4, 56, "Subsubsection",ExpressionUUID->"a5fffc9d-7354-4c38-95c1-b7103c42ad56"],
+Cell[69692, 1552, 9541, 191, 2014, "Input",ExpressionUUID->"0e3349fb-7844-4d93-8937-1d74606f5c2f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[121602, 2688, 3033, 60, 506, "Input",ExpressionUUID->"43b08569-14a9-43f9-8189-04d27008f5d9"],
-Cell[124638, 2750, 41481, 866, 683, "Output",ExpressionUUID->"c96ee44a-cee4-4e65-a716-69ef1152c91d"]
-}, Open  ]]
+Cell[79270, 1748, 163, 3, 56, "Subsubsection",ExpressionUUID->"9ee1c16c-b644-4cee-a9c6-7b884e62a802"],
+Cell[79436, 1753, 3185, 72, 1000, "Input",ExpressionUUID->"f6f1312d-31d6-42e1-b424-f458a56d4a39"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82658, 1830, 170, 3, 56, "Subsubsection",ExpressionUUID->"99d7bf79-5510-4014-a74a-e2365fcebb97"],
+Cell[82831, 1835, 567, 15, 37, "Input",ExpressionUUID->"95e2439a-777c-433a-b8b4-7fa3e7228ea9"],
+Cell[83401, 1852, 1589, 38, 376, "Input",ExpressionUUID->"015156ae-2f90-4450-a847-5ce2df7a8f66"],
+Cell[84993, 1892, 2153, 49, 454, "Input",ExpressionUUID->"1391b8e8-2053-45cb-a1e5-d6b873177739"],
+Cell[87149, 1943, 3247, 64, 454, "Input",ExpressionUUID->"43b08569-14a9-43f9-8189-04d27008f5d9"],
+Cell[90399, 2009, 1845, 44, 454, "Input",ExpressionUUID->"00f676cd-4545-463d-bce7-957bd97e688b"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
