@@ -1,0 +1,10 @@
+fixMH = {{233, 5, 5, 2, 5.861686540569429}, {233, 5, 5, 3, 
+      5.679697360965886}, {233, 5, 5, 4, 5.727018161276007}, 
+     {233, 5, 6, 2, 5.81509979075472}, {233, 5, 6, 3, 5.656795078411315}, 
+     {233, 5, 6, 4, 5.680505541718629}, {233, 5, 7, 2, Indeterminate}, 
+     {233, 5, 7, 3, Indeterminate}, {233, 5, 7, 4, Indeterminate}, 
+     {233, 5, 8, 2, Indeterminate}, {233, 5, 8, 3, Indeterminate}, 
+     {233, 5, 8, 4, Indeterminate}, {233, 5, 9, 2, Indeterminate}, 
+     {233, 5, 9, 3, Indeterminate}, {233, 5, 9, 4, Indeterminate}, 
+     {233, 5, 10, 2, Indeterminate}, {233, 5, 10, 3, Indeterminate}, 
+     {233, 5, 10, 4, Indeterminate}}

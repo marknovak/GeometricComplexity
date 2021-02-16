@@ -1,6 +1,0 @@
-varSN2 = {{21, 2, 5, 2, Indeterminate}, {21, 3, 5, 3, Indeterminate}, 
-     {34, 2, 6, 2, Indeterminate}, {34, 3, 6, 3, Indeterminate}, 
-     {55, 2, 7, 2, Indeterminate}, {55, 3, 7, 3, Indeterminate}, 
-     {89, 2, 8, 2, Indeterminate}, {89, 3, 8, 3, Indeterminate}, 
-     {144, 2, 9, 2, Indeterminate}, {144, 3, 9, 3, Indeterminate}, 
-     {233, 2, 10, 2, Indeterminate}, {233, 3, 10, 3, Indeterminate}}
