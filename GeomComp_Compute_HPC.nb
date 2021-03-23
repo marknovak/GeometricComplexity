@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    138271,       3387]
-NotebookOptionsPosition[    137859,       3371]
-NotebookOutlinePosition[    138285,       3388]
-CellTagsIndexPosition[    138242,       3385]
+NotebookDataLength[    171539,       4173]
+NotebookOptionsPosition[    171127,       4157]
+NotebookOutlinePosition[    171553,       4174]
+CellTagsIndexPosition[    171510,       4171]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -54,7 +54,8 @@ Cell[BoxData[{
    RowBox[{"SqrtDetEFlim", "[", 
     RowBox[{
     "func_", ",", "Det_", ",", "\[CapitalNu]vals_", ",", "Pvals_", ",", 
-     "subs_"}], "]"}], ":=", "\[IndentingNewLine]", 
+     "subs_", ",", "FminMult_", ",", "FmaxMult_"}], "]"}], ":=", 
+   "\[IndentingNewLine]", 
    RowBox[{"Piecewise", "[", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{"{", 
@@ -69,7 +70,9 @@ Cell[BoxData[{
             RowBox[{"P", "\[Rule]", " ", "Pvals"}]}], "/.", 
            RowBox[{"\[CapitalNu]", "\[Rule]", " ", "\[CapitalNu]vals"}]}], 
           "]"}], "\[LessEqual]", "  ", 
-         RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}]}], " ", "&&", " ", 
+         RowBox[{
+          RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}], "*", "FmaxMult"}]}], 
+        " ", "&&", " ", 
         RowBox[{
          RowBox[{"Min", "[", 
           RowBox[{
@@ -79,14 +82,17 @@ Cell[BoxData[{
            RowBox[{"\[CapitalNu]", "\[Rule]", 
             RowBox[{"{", 
              RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}], "}"}]}]}], "]"}], 
-         "\[GreaterEqual]", " ", "1"}]}]}], "  ", "\[IndentingNewLine]", 
-      "}"}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+         "\[GreaterEqual]", " ", 
+         RowBox[{"1", " ", "*", "FminMult"}]}]}]}], " ", 
+      "\[IndentingNewLine]", "}"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"SqrtDetEFlimSN1", "[", 
     RowBox[{
     "func_", ",", "Det_", ",", "\[CapitalNu]vals_", ",", "Pvals_", ",", 
-     "subs_"}], "]"}], ":=", "\[IndentingNewLine]", 
+     "subs_", ",", "FminMult_", ",", "FmaxMult_"}], "]"}], ":=", 
+   "\[IndentingNewLine]", 
    RowBox[{"Piecewise", "[", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{"{", 
@@ -101,7 +107,9 @@ Cell[BoxData[{
             RowBox[{"P", "\[Rule]", " ", "Pvals"}]}], "/.", 
            RowBox[{"\[CapitalNu]", "\[Rule]", " ", "\[CapitalNu]vals"}]}], 
           "]"}], "\[LessEqual]", "  ", 
-         RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}]}], " ", "&&", " ", 
+         RowBox[{
+          RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}], "*", "FmaxMult"}]}], 
+        " ", "&&", " ", 
         RowBox[{
          RowBox[{"Min", "[", 
           RowBox[{
@@ -111,7 +119,8 @@ Cell[BoxData[{
            RowBox[{"\[CapitalNu]", "\[Rule]", 
             RowBox[{"{", 
              RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}], "}"}]}]}], "]"}], 
-         "\[GreaterEqual]", " ", "1"}], "   ", "&&", "\[IndentingNewLine]", 
+         "\[GreaterEqual]", " ", 
+         RowBox[{"1", "*", "FminMult"}]}], "   ", "&&", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"d", " ", "b", " ", 
           RowBox[{"Max", "[", 
@@ -129,7 +138,8 @@ Cell[BoxData[{
     RowBox[{"SqrtDetEFlimSN2", "[", 
      RowBox[{
      "func_", ",", "Det_", ",", "\[CapitalNu]vals_", ",", "Pvals_", ",", 
-      "subs_"}], "]"}], ":=", "\[IndentingNewLine]", 
+      "subs_", ",", "FminMult_", ",", "FmaxMult_"}], "]"}], ":=", 
+    "\[IndentingNewLine]", 
     RowBox[{"Piecewise", "[", "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"{", 
@@ -144,7 +154,9 @@ Cell[BoxData[{
              RowBox[{"P", "\[Rule]", " ", "Pvals"}]}], "/.", 
             RowBox[{"\[CapitalNu]", "\[Rule]", " ", "\[CapitalNu]vals"}]}], 
            "]"}], "\[LessEqual]", " ", 
-          RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}]}], " ", "&&", " ", 
+          RowBox[{
+           RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}], "*", "FmaxMult"}]}],
+          " ", "&&", " ", 
          RowBox[{
           RowBox[{"Min", "[", 
            RowBox[{
@@ -154,8 +166,9 @@ Cell[BoxData[{
             RowBox[{"\[CapitalNu]", "\[Rule]", 
              RowBox[{"{", 
               RowBox[{"Max", "[", "\[CapitalNu]vals", "]"}], "}"}]}]}], "]"}],
-           "\[GreaterEqual]", " ", "1"}], "   ", "&&", "\[IndentingNewLine]", 
-         " ", 
+           "\[GreaterEqual]", " ", 
+          RowBox[{"1", " ", "*", "FminMult"}]}], "  ", "&&", 
+         "\[IndentingNewLine]", " ", 
          RowBox[{
           RowBox[{"b", " ", 
            RowBox[{"Max", "[", 
@@ -165,10 +178,9 @@ Cell[BoxData[{
               RowBox[{"P", "\[Rule]", " ", "Pvals"}]}], "/.", 
              RowBox[{"\[CapitalNu]", "\[Rule]", "\[CapitalNu]vals"}]}], 
             "]"}]}], "\[LessEqual]", "   ", "1"}]}]}], " ", 
-       "\[IndentingNewLine]", "}"}], "}"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", "}"}], "}"}], "]"}]}], ";"}], "\n", 
   RowBox[{"(*", " ", 
-   RowBox[{"k", "=", "1"}], " ", "*)"}]}], "\n", 
+   RowBox[{"k", "=", "1"}], " ", "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"H1", " ", "=", " ", 
@@ -648,126 +660,130 @@ Cell[BoxData[{
   RowBox[{"(*", 
    RowBox[{"k", "=", "4"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"BDOR", " ", "=", " ", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", 
-       SuperscriptBox["\[CapitalNu]", "u"]}], 
-      RowBox[{"1", "+", 
-       RowBox[{"a", " ", "b", " ", 
-        SuperscriptBox["\[CapitalNu]", "u"]}], " ", "+", " ", 
-       RowBox[{"c", " ", 
-        RowBox[{"(", 
-         RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";"}], "  ", 
-  
+  RowBox[{"BDOR", " ", "=", " ", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"a", " ", 
+      SuperscriptBox["\[CapitalNu]", "u"]}], 
+     RowBox[{"1", "+", 
+      RowBox[{"a", " ", "b", " ", 
+       SuperscriptBox["\[CapitalNu]", "u"]}], " ", "+", " ", 
+      RowBox[{"c", " ", 
+       RowBox[{"(", 
+        RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";", "  ", 
   RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"Okuyama", " ", "&"}], " ", "Ruyle", " ", "2011"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"CMOR", " ", "=", " ", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", 
-       SuperscriptBox["\[CapitalNu]", "u"]}], 
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"a", " ", "b", " ", 
-          SuperscriptBox["\[CapitalNu]", "u"]}]}], ")"}], 
-       RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"c", " ", 
-          RowBox[{"(", 
-           RowBox[{"P", "-", "1"}], ")"}]}]}], ")"}]}]], "P", " ", "T"}]}], 
-   ";"}], "  ", 
+    RowBox[{"Okuyama", " ", "&"}], " ", "Ruyle", " ", "2011"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"CMOR", " ", "=", " ", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"a", " ", 
+      SuperscriptBox["\[CapitalNu]", "u"]}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"a", " ", "b", " ", 
+         SuperscriptBox["\[CapitalNu]", "u"]}]}], ")"}], 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"c", " ", 
+         RowBox[{"(", 
+          RowBox[{"P", "-", "1"}], ")"}]}]}], ")"}]}]], "P", " ", "T"}]}], 
+  ";", "  ", 
   RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"Okuyama", " ", "&"}], " ", "Ruyle", " ", "2011"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"AAOR", "=", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", 
+    RowBox[{"Okuyama", " ", "&"}], " ", "Ruyle", " ", "2011"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"AAOR", "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"a", " ", 
+      FractionBox[
+       SuperscriptBox["\[CapitalNu]", "u"], 
+       SuperscriptBox["P", "v"]]}], 
+     RowBox[{"1", "+", 
+      RowBox[{"a", " ", "b", " ", 
        FractionBox[
         SuperscriptBox["\[CapitalNu]", "u"], 
-        SuperscriptBox["P", "v"]]}], 
-      RowBox[{"1", "+", 
-       RowBox[{"a", " ", "b", " ", 
-        FractionBox[
-         SuperscriptBox["\[CapitalNu]", "u"], 
-         SuperscriptBox["P", "v"]]}]}]], "P", " ", "T"}]}], ";"}], "  ", 
+        SuperscriptBox["P", "v"]]}]}]], "P", " ", "T"}]}], ";", "  ", 
   RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"Okuyama", " ", "&"}], " ", "Ruyle", " ", "2011"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"SN1", "=", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", "\[CapitalNu]"}], 
-      RowBox[{"1", "+", " ", 
-       RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}], " ", "+", " ", 
-       RowBox[{"c", " ", 
-        RowBox[{"(", 
-         RowBox[{"P", "-", "1"}], ")"}]}], "+", 
-       RowBox[{"a", " ", "b", " ", "c", " ", 
-        RowBox[{"(", 
-         RowBox[{"1", "-", "d"}], ")"}], " ", "\[CapitalNu]", 
-        RowBox[{"(", 
-         RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";"}], " ", 
-  RowBox[{"(*", " ", 
+    RowBox[{"Okuyama", " ", "&"}], " ", "Ruyle", " ", "2011"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"SN1", "=", 
    RowBox[{
-    RowBox[{"Stouffer", " ", "&"}], " ", "Novak", " ", "2021"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"SN2", "=", 
-    RowBox[{
-     FractionBox[
-      RowBox[{"a", " ", "\[CapitalNu]", " ", 
+    FractionBox[
+     RowBox[{"a", " ", "\[CapitalNu]"}], 
+     RowBox[{"1", "+", " ", 
+      RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}], " ", "+", " ", 
+      RowBox[{"c", " ", 
        RowBox[{"(", 
-        RowBox[{"1", "+", 
-         RowBox[{"c", 
-          RowBox[{"(", 
-           RowBox[{"1", "-", "d"}], ")"}], " ", 
-          RowBox[{"(", 
-           RowBox[{"P", "-", "1"}], ")"}]}]}], ")"}]}], 
-      RowBox[{"1", "+", " ", 
-       RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}], " ", "+", " ", 
-       RowBox[{"c", " ", 
-        RowBox[{"(", 
-         RowBox[{"P", "-", "1"}], ")"}]}], "+", 
-       RowBox[{"a", " ", "b", " ", "c", " ", 
-        RowBox[{"(", 
-         RowBox[{"1", "-", "d"}], ")"}], " ", "\[CapitalNu]", 
-        RowBox[{"(", 
-         RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";"}], " ", 
+        RowBox[{"P", "-", "1"}], ")"}]}], "+", 
+      RowBox[{"a", " ", "b", " ", "c", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "d"}], ")"}], " ", "\[CapitalNu]", 
+       RowBox[{"(", 
+        RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Stouffer", " ", "&"}], " ", "Novak", " ", "2021"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"SN2", "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"a", " ", "\[CapitalNu]", " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"c", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"P", "-", "1"}], ")"}]}]}], ")"}]}], 
+     RowBox[{"1", "+", " ", 
+      RowBox[{"a", " ", "b", " ", "\[CapitalNu]"}], " ", "+", " ", 
+      RowBox[{"c", " ", 
+       RowBox[{"(", 
+        RowBox[{"P", "-", "1"}], ")"}]}], "+", 
+      RowBox[{"a", " ", "b", " ", "c", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "d"}], ")"}], " ", "\[CapitalNu]", 
+       RowBox[{"(", 
+        RowBox[{"P", "-", "1"}], ")"}]}]}]], "P", " ", "T"}]}], ";", " ", 
   RowBox[{"(*", " ", 
    RowBox[{
     RowBox[{"Stouffer", " ", "&"}], " ", "Novak", " ", "2021"}], " ", "*)"}], 
   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"models", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+    "H1", ",", "LR", ",", "BWL1", ",", "     ", "\[IndentingNewLine]", "H2", 
+     ",", "MM", ",", "HV", ",", "AG", ",", "GI", ",", " ", "GIA", ",", " ", 
+     "GB", ",", " ", "HT", ",", "HT2", ",", " ", "H3", ",", "AGK", ",", " ", 
+     "A1", ",", " ", "A3", ",", " ", "SH", ",", "      ", 
+     "\[IndentingNewLine]", "BD", ",", " ", "CM", ",", " ", "AA", ",", " ", 
+     "BWL2", ",", " ", "H3R", ",", " ", "A2", ",", " ", "HLB", ",", " ", "MH",
+      ",", " ", "W", ",", " ", "TTA", ",", " ", "SBB", ",", "SSS", ",", 
+     "    ", "\[IndentingNewLine]", "BDOR", ",", " ", "CMOR", ",", " ", 
+     "AAOR", ",", " ", "SN1", ",", " ", "SN2"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   RowBox[{"models", " ", "=", " ", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-     "H1", ",", "LR", ",", "BWL1", ",", "     ", "\[IndentingNewLine]", "H2", 
-      ",", "MM", ",", "HV", ",", "AG", ",", "GI", ",", " ", "GIA", ",", " ", 
-      "GB", ",", " ", "HT", ",", "HT2", ",", " ", "H3", ",", "AGK", ",", " ", 
-      "A1", ",", " ", "A3", ",", " ", "SH", ",", "      ", 
-      "\[IndentingNewLine]", "BD", ",", " ", "CM", ",", " ", "AA", ",", " ", 
-      "BWL2", ",", " ", "H3R", ",", " ", "A2", ",", " ", "HLB", ",", " ", 
-      "MH", ",", " ", "W", ",", " ", "TTA", ",", " ", "SBB", ",", "SSS", ",", 
-      "    ", "\[IndentingNewLine]", "BDOR", ",", " ", "CMOR", ",", " ", 
-      "AAOR", ",", " ", "SN1", ",", " ", "SN2"}], "}"}]}], ";"}], 
-  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\n", 
+   RowBox[{"DumpSave", "[", 
+    RowBox[{"\"\<Models.mx\>\"", ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "models", ",", "\[IndentingNewLine]", "H1", ",", "LR", ",", "BWL1", ",",
+        "\[IndentingNewLine]", "H2", ",", "MM", ",", "HV", ",", "AG", ",", 
+       "GI", ",", " ", "GIA", ",", " ", "GB", ",", " ", "HT", ",", "HT2", ",",
+        " ", "H3", ",", " ", "AGK", ",", "A1", ",", " ", "A3", ",", " ", "SH",
+        ",", "      ", "\[IndentingNewLine]", "BD", ",", " ", "CM", ",", " ", 
+       "AA", ",", " ", "BWL2", ",", " ", "H3R", ",", " ", "A2", ",", " ", 
+       "HLB", ",", " ", "MH", ",", " ", "W", ",", " ", "TTA", ",", "SBB", ",",
+        "SSS", ",", "    ", "\[IndentingNewLine]", "BDOR", ",", " ", "CMOR", 
+       ",", " ", "AAOR", ",", " ", "SN1", ",", " ", "SN2"}], "}"}]}], "]"}], 
+   ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"PoislL", "[", "func_", "]"}], ":=", 
@@ -919,7 +935,7 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"lLSN2", "[", 
     RowBox[{"a_", ",", "b_", ",", "c_", ",", "d_"}], "]"}], ":=", 
-   RowBox[{"PoislL", "[", "SN2", "]"}]}], "\[IndentingNewLine]"}], "\n", 
+   RowBox[{"PoislL", "[", "SN2", "]"}]}], "\n"}], "\[IndentingNewLine]", 
  RowBox[{"ClearAll", "[", "GeomComplex", "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
@@ -935,15 +951,13 @@ Cell[BoxData[{
        "\[IndentingNewLine]", 
        RowBox[{"Pvals", "=", "Pvalues"}], ",", "\[IndentingNewLine]", 
        RowBox[{"Tval", "=", "1"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"NIntMethod", "=", 
-        RowBox[{"{", 
-         RowBox[{"\"\<QuasiMonteCarlo\>\"", ",", 
-          RowBox[{"\"\<MaxPoints\>\"", "\[Rule]", " ", 
-           RowBox[{"10", "^", "8"}]}]}], "}"}]}], ",", "\[IndentingNewLine]", 
-       
+       RowBox[{"NIntMethod", "=", " ", "\"\<LocalAdaptive\>\""}], " ", ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"maxRec", "=", "500"}], ",", "\[IndentingNewLine]", 
        RowBox[{"accgoal", "=", "3"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"precgoal", "=", "3"}]}], "\[IndentingNewLine]", "}"}], ",", 
+       RowBox[{"precgoal", "=", "3"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FminMult", "=", "1"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FmaxMult", "=", "1"}]}], "\[IndentingNewLine]", "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"\[CapitalNu]probs", "=", 
@@ -1016,7 +1030,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "H1", ",", "DetH1", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"AccuracyGoal", "\[Rule]", "accgoal"}], ",", 
@@ -1046,7 +1061,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "LR", ",", "DetLR", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"AccuracyGoal", "\[Rule]", "accgoal"}], ",", 
@@ -1077,7 +1093,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "BWL1", ",", "DetBWL1", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"AccuracyGoal", "\[Rule]", "accgoal"}], ",", 
@@ -1109,7 +1126,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "H2", ",", "DetH2", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1142,7 +1160,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "MM", ",", "DetMM", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1175,7 +1194,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "HV", ",", "DetHV", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1209,7 +1229,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "H3", ",", "DetH3", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1242,7 +1263,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "AG", ",", "DetAG", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1275,7 +1297,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "GI", ",", "DetGI", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1308,7 +1331,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "GIA", ",", "DetGIA", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1341,7 +1365,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "GB", ",", "DetGB", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1374,7 +1399,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "HT", ",", "DetHT", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1407,7 +1433,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "HT2", ",", "DetHT2", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1440,7 +1467,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "A3", ",", "DetA3", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1473,7 +1501,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "AGK", ",", "DetAGK", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1506,7 +1535,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "A1", ",", "DetA1", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1539,7 +1569,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "SH", ",", "DetSH", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1572,7 +1603,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "BD", ",", "DetBD", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1607,7 +1639,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "CM", ",", "DetCM", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1642,7 +1675,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "AA", ",", "DetAA", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1677,7 +1711,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "BWL2", ",", "DetBWL2", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1712,7 +1747,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "H3R", ",", "DetH3R", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1747,7 +1783,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "A2", ",", "DetA2", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1782,7 +1819,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "HLB", ",", "DetHLB", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1817,7 +1855,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "MH", ",", "DetMH", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1852,7 +1891,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "W", ",", "DetW", ",", "\[CapitalNu]vals", ",", "Pvals", ",", 
-               "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], ",", 
+             " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1887,7 +1927,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "TTA", ",", "DetTTA", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1922,7 +1963,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "SBB", ",", "DetSBB", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1957,7 +1999,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "SSS", ",", "DetSSS", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -1992,7 +2035,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "BDOR", ",", "DetBDOR", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -2029,7 +2073,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "CMOR", ",", "DetCMOR", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -2066,7 +2111,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlim", "[", 
               RowBox[{
               "AAOR", ",", "DetAAOR", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -2104,7 +2150,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlimSN1", "[", 
               RowBox[{
               "SN1", ",", "DetSN1", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -2142,7 +2189,8 @@ Cell[BoxData[{
              RowBox[{"SqrtDetEFlimSN2", "[", 
               RowBox[{
               "SN2", ",", "DetSN2", ",", "\[CapitalNu]vals", ",", "Pvals", 
-               ",", "subs"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+               ",", "subs", ",", "FminMult", ",", " ", "FmaxMult"}], "]"}], 
+             ",", " ", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
               RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"ParmRange", "[", 
@@ -2185,7 +2233,9 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"PredMaxLevelsFix", "=", "4"}], ";"}], " ", "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", "\n"}], "\[IndentingNewLine]", 
+  "\n"}], "\[IndentingNewLine]", \
+"\"\</Users/marknovak/Git/aaaManuscripts/GeometricComplexity/mathematica/\
+results/GoldenRatio\>\"", "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"logGRSpace", "[", 
@@ -2444,6 +2494,743 @@ Cell[BoxData[{
         "1"}], "]"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
     "]"}]}], "\n", 
  RowBox[{
+  RowBox[{"VarDesigns", "=", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PreyVals", "[", 
+        RowBox[{"i", ",", 
+         RowBox[{"Fibonacci", "[", "i", "]"}], ",", "AbundSeries"}], "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"PredVals", "[", 
+        RowBox[{"j", ",", 
+         RowBox[{"Fibonacci", "[", "j", "]"}], ",", "AbundSeries"}], "]"}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", " ", "PreyMinLevels", ",", "PreyMaxLevelsVar"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "PredMinLevels", ",", "PredMaxLevelsVar"}], "}"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TableForm", "[", "VarDesigns", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<DesignsVar.txt\>\"", ",", 
+    RowBox[{"TeXForm", "[", "VarDesigns", "]"}]}], "]"}], ";"}], "\n", 
+ InterpretationBox[GridBox[{
+    {GridBox[{
+       {"3", "4", "7", "13", "21"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "13", "21"},
+       {"1", "2", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "13", "21"},
+       {"1", "2", "3", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "13", "21"},
+       {"1", "2", "3", "5", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "13", "21"},
+       {"1", "2", "3", "5", "8"}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "4", "7", "12", "20", "34"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "34"},
+       {"1", "2", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "34"},
+       {"1", "2", "3", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "34"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "34"},
+       {"1", "2", "3", "5", "8", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "4", "7", "12", "20", "33", "55"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "33", "55"},
+       {"1", "2", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "33", "55"},
+       {"1", "2", "3", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "33", "55"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "33", "55"},
+       {"1", "2", "3", "5", "8", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "4", "7", "12", "20", "32", "54", "89"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "32", "54", "89"},
+       {"1", "2", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "32", "54", "89"},
+       {"1", "2", "3", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "32", "54", "89"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "20", "32", "54", "89"},
+       {"1", "2", "3", "5", "8", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "4", "7", "12", "19", "32", "53", "87", "144"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "53", "87", "144"},
+       {"1", "2", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "53", "87", "144"},
+       {"1", "2", "3", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "53", "87", "144"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "53", "87", "144"},
+       {"1", "2", "3", "5", "8", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "2", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "2", "3", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "2", "3", "5", "8", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  TableForm[{{{{3, 4, 7, 13, 21}, {1}}, {{3, 4, 7, 13, 21}, {1, 2}}, {{3, 4, 
+      7, 13, 21}, {1, 2, 3}}, {{3, 4, 7, 13, 21}, {1, 2, 3, 5}}, {{3, 4, 7, 
+     13, 21}, {1, 2, 3, 5, 
+     8}}}, {{{3, 4, 7, 12, 20, 34}, {1}}, {{3, 4, 7, 12, 20, 34}, {1, 2}}, {{
+      3, 4, 7, 12, 20, 34}, {1, 2, 3}}, {{3, 4, 7, 12, 20, 34}, {1, 2, 3, 
+      5}}, {{3, 4, 7, 12, 20, 34}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 20, 33, 
+      55}, {1}}, {{3, 4, 7, 12, 20, 33, 55}, {1, 2}}, {{3, 4, 7, 12, 20, 33, 
+      55}, {1, 2, 3}}, {{3, 4, 7, 12, 20, 33, 55}, {1, 2, 3, 5}}, {{3, 4, 7, 
+      12, 20, 33, 55}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 20, 32, 54, 89}, {
+      1}}, {{3, 4, 7, 12, 20, 32, 54, 89}, {1, 2}}, {{3, 4, 7, 12, 20, 32, 54,
+       89}, {1, 2, 3}}, {{3, 4, 7, 12, 20, 32, 54, 89}, {1, 2, 3, 5}}, {{3, 4,
+       7, 12, 20, 32, 54, 89}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 19, 32, 53, 
+      87, 144}, {1}}, {{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1, 2}}, {{3, 4, 7,
+       12, 19, 32, 53, 87, 144}, {1, 2, 3}}, {{3, 4, 7, 12, 19, 32, 53, 87, 
+      144}, {1, 2, 3, 5}}, {{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1, 2, 3, 5, 
+      8}}}, {{{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1}}, {{3, 4, 7, 12, 
+      19, 32, 52, 86, 141, 233}, {1, 2}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 
+      233}, {1, 2, 3}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3, 
+      5}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3, 5, 
+      8}}}}]], "\n", 
+ RowBox[{
+  RowBox[{"FixDesigns", "=", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PreyVals", "[", 
+        RowBox[{"i", ",", 
+         RowBox[{"Fibonacci", "[", "PreyMaxLevelsFix", "]"}], ",", 
+         "AbundSeries"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"PredVals", "[", 
+        RowBox[{"j", ",", 
+         RowBox[{"Fibonacci", "[", "PredMaxLevelsFix", "]"}], ",", 
+         "AbundSeries"}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", " ", "PreyMinLevels", ",", "PreyMaxLevelsFix"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "PredMinLevels", ",", "PredMaxLevelsFix"}], "}"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TableForm", "[", "FixDesigns", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<DesignsFix.txt\>\"", ",", 
+    RowBox[{"TeXForm", "[", "FixDesigns", "]"}]}], "]"}], ";"}], "\n", 
+ InterpretationBox[GridBox[{
+    {GridBox[{
+       {"3", "8", "25", "76", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "8", "25", "76", "233"},
+       {"1", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "8", "25", "76", "233"},
+       {"1", "2", "5", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "8", "25", "76", "233"},
+       {"1", "2", "3", "5", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "6", "16", "39", "95", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "6", "16", "39", "95", "233"},
+       {"1", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "6", "16", "39", "95", "233"},
+       {"1", "2", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "6", "16", "39", "95", "233"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "6", "12", "25", "52", "110", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "6", "12", "25", "52", "110", "233"},
+       {"1", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "6", "12", "25", "52", "110", "233"},
+       {"1", "2", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "6", "12", "25", "52", "110", "233"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "5", "9", "18", "34", "65", "123", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "5", "9", "18", "34", "65", "123", "233"},
+       {"1", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "5", "9", "18", "34", "65", "123", "233"},
+       {"1", "2", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "5", "9", "18", "34", "65", "123", "233"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "5", "8", "14", "25", "43", "76", "133", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "5", "8", "14", "25", "43", "76", "133", "233"},
+       {"1", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "5", "8", "14", "25", "43", "76", "133", "233"},
+       {"1", "2", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "5", "8", "14", "25", "43", "76", "133", "233"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]},
+    {GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "2", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}], GridBox[{
+       {"3", "4", "7", "12", "19", "32", "52", "86", "141", "233"},
+       {"1", "2", "3", "5", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", "\"\<\>\"", 
+        "\"\<\>\"", "\"\<\>\""}
+      },
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.1]}, 
+          Offset[0.2]}}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  TableForm[{{{{3, 8, 25, 76, 233}, {1}}, {{3, 8, 25, 76, 233}, {1, 5}}, {{3, 
+      8, 25, 76, 233}, {1, 2, 5}}, {{3, 8, 25, 76, 233}, {1, 2, 3, 5}}}, {{{3,
+       6, 16, 39, 95, 233}, {1}}, {{3, 6, 16, 39, 95, 233}, {1, 5}}, {{3, 6, 
+      16, 39, 95, 233}, {1, 2, 5}}, {{3, 6, 16, 39, 95, 233}, {1, 2, 3, 
+      5}}}, {{{3, 6, 12, 25, 52, 110, 233}, {1}}, {{3, 6, 12, 25, 52, 110, 
+      233}, {1, 5}}, {{3, 6, 12, 25, 52, 110, 233}, {1, 2, 5}}, {{3, 6, 12, 
+      25, 52, 110, 233}, {1, 2, 3, 5}}}, {{{3, 5, 9, 18, 34, 65, 123, 233}, {
+      1}}, {{3, 5, 9, 18, 34, 65, 123, 233}, {1, 5}}, {{3, 5, 9, 18, 34, 65, 
+      123, 233}, {1, 2, 5}}, {{3, 5, 9, 18, 34, 65, 123, 233}, {1, 2, 3, 
+      5}}}, {{{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1}}, {{3, 5, 8, 14, 25, 
+      43, 76, 133, 233}, {1, 5}}, {{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1, 2,
+       5}}, {{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1, 2, 3, 5}}}, {{{3, 4, 7, 
+      12, 19, 32, 52, 86, 141, 233}, {1}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141,
+       233}, {1, 5}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 5}}, {{
+      3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3, 5}}}}]], "\n", 
+ RowBox[{
   RowBox[{"varH1", "=", 
    RowBox[{"GeomComp", "[", 
     RowBox[{
@@ -2468,8 +3255,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k1fixH1.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k1fixH1.txt\>\"", ",", "fixH1"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k1fixH1.txt\>\"", ",", "fixH1"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varLR", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2494,8 +3281,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k1fixLR.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k1fixLR.txt\>\"", ",", "fixLR"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k1fixLR.txt\>\"", ",", "fixLR"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varBWL1", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2522,8 +3309,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k1fixBWL1.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k1fixBWL1.txt\>\"", ",", "fixBWL1"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k1fixBWL1.txt\>\"", ",", "fixBWL1"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varH2", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2548,8 +3335,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixH2.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixH2.txt\>\"", ",", "fixH2"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixH2.txt\>\"", ",", "fixH2"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varMM", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2574,8 +3361,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixMM.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixMM.txt\>\"", ",", "fixMM"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixMM.txt\>\"", ",", "fixMM"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varHV", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2600,8 +3387,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixHV.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixHV.txt\>\"", ",", "fixHV"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixHV.txt\>\"", ",", "fixHV"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varAG", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2626,8 +3413,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixAG.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixAG.txt\>\"", ",", "fixAG"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixAG.txt\>\"", ",", "fixAG"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varGI", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2652,8 +3439,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixGI.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixGI.txt\>\"", ",", "fixGI"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixGI.txt\>\"", ",", "fixGI"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varGIA", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2678,8 +3465,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixGIA.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixGIA.txt\>\"", ",", "fixGIA"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixGIA.txt\>\"", ",", "fixGIA"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varGB", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2704,8 +3491,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixGB.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixGB.txt\>\"", ",", "fixGB"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixGB.txt\>\"", ",", "fixGB"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varHT", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2759,8 +3546,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixHT2.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixHT2.txt\>\"", ",", "fixHT2"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixHT2.txt\>\"", ",", "fixHT2"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varH3", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2785,8 +3572,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixH3.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixH3.txt\>\"", ",", "fixH3"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixH3.txt\>\"", ",", "fixH3"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varAGK", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2823,7 +3610,7 @@ Cell[BoxData[{
     "\"Directory or file \
 \\!\\(\\*RowBox[{\\\"\\\\\\\"k2fixAGK.txt\\\\\\\"\\\"}]\\) not found.\"", 2, 
     8482, 225, 31232330130517213297, "Local"},
-   "MessageTemplate"], "\[IndentingNewLine]", "\n"}], "\n", 
+   "MessageTemplate"], "\n", "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varA1", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2848,8 +3635,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixA1.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixA1.txt\>\"", ",", "fixA1"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixA1.txt\>\"", ",", "fixA1"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varA3", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2874,8 +3661,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixA3.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixA3.txt\>\"", ",", "fixA3"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixA3.txt\>\"", ",", "fixA3"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varSH", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2900,8 +3687,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k2fixSH.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k2fixSH.txt\>\"", ",", "fixSH"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k2fixSH.txt\>\"", ",", "fixSH"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varBD", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2926,8 +3713,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixBD.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixBD.txt\>\"", ",", "fixBD"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixBD.txt\>\"", ",", "fixBD"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varCM", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2952,8 +3739,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixCM.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixCM.txt\>\"", ",", "fixCM"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixCM.txt\>\"", ",", "fixCM"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varAA", "=", 
    RowBox[{"GeomComp", "[", 
@@ -2978,8 +3765,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixAA.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixAA.txt\>\"", ",", "fixAA"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixAA.txt\>\"", ",", "fixAA"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varBWL2", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3004,8 +3791,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixBWL2.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixBWL2.txt\>\"", ",", "fixBWL2"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixBWL2.txt\>\"", ",", "fixBWL2"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varH3R", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3030,8 +3817,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixH3R.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixH3R.txt\>\"", ",", "fixH3R"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixH3R.txt\>\"", ",", "fixH3R"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varA2", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3056,8 +3843,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixA2.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixA2.txt\>\"", ",", "fixA2"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixA2.txt\>\"", ",", "fixA2"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varHLB", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3082,8 +3869,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixHLB.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixHLB.txt\>\"", ",", "fixHLB"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixHLB.txt\>\"", ",", "fixHLB"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varMH", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3108,8 +3895,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixMH.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixMH.txt\>\"", ",", "fixMH"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixMH.txt\>\"", ",", "fixMH"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varW", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3134,8 +3921,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixW.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixW.txt\>\"", ",", "fixW"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixW.txt\>\"", ",", "fixW"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varTTA", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3160,8 +3947,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixTTA.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixTTA.txt\>\"", ",", "fixTTA"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixTTA.txt\>\"", ",", "fixTTA"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varSBB", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3186,8 +3973,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k3fixSBB.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k3fixSBB.txt\>\"", ",", "fixSBB"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k3fixSBB.txt\>\"", ",", "fixSBB"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varSSS", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3216,8 +4003,8 @@ Cell[BoxData[{
   " "}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Save", "[", 
-   RowBox[{"\"\<k3fixSSS.txt\>\"", ",", "fixSSS"}], "]"}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+   RowBox[{"\"\<k3fixSSS.txt\>\"", ",", "fixSSS"}], "]"}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varBDOR", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3242,8 +4029,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k4fixBDOR.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k4fixBDOR.txt\>\"", ",", "fixBDOR"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k4fixBDOR.txt\>\"", ",", "fixBDOR"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varCMOR", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3268,8 +4055,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k4fixCMOR.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k4fixCMOR.txt\>\"", ",", "fixCMOR"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k4fixCMOR.txt\>\"", ",", "fixCMOR"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varAAOR", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3294,8 +4081,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"DeleteFile", "[", "\"\<k4fixAAOR.txt\>\"", "]"}], ";", " ", 
    RowBox[{"Save", "[", 
-    RowBox[{"\"\<k4fixAAOR.txt\>\"", ",", "fixAAOR"}], "]"}]}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+    RowBox[{"\"\<k4fixAAOR.txt\>\"", ",", "fixAAOR"}], "]"}]}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varSN1", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3324,8 +4111,8 @@ Cell[BoxData[{
   " "}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Save", "[", 
-   RowBox[{"\"\<k4fixSN1.txt\>\"", ",", "fixSN1"}], "]"}], 
-  "\[IndentingNewLine]", "\n"}], "\n", 
+   RowBox[{"\"\<k4fixSN1.txt\>\"", ",", "fixSN1"}], "]"}], "\n", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"varSN2", "=", 
    RowBox[{"GeomComp", "[", 
@@ -3362,11 +4149,10 @@ Cell[BoxData[{
    3.7925097026000013`*^9}, {3.793468547141547*^9, 3.7934685678200817`*^9}, {
    3.793469899724435*^9, 3.793469929250779*^9}, {3.793470096913563*^9, 
    3.793470103016612*^9}, {3.7947827713869677`*^9, 3.7947827804010153`*^9}, {
-   3.815846352195281*^9, 3.815846390976542*^9}, 3.825466064862117*^9, {
-   3.825466134193796*^9, 3.82546613567799*^9}, {3.825466303417808*^9, 
-   3.825466304615767*^9}, {3.8254667718537292`*^9, 3.825466810339993*^9}, {
-   3.825467085036715*^9, 3.82546708646694*^9}, {3.825467386969162*^9, 
-   3.825467390414151*^9}},ExpressionUUID->"1b47023d-c3c6-47d0-93ae-\
+   3.815846352195281*^9, 3.815846390976542*^9}, 3.825509267484522*^9, {
+   3.825509423288389*^9, 3.8255094299685097`*^9}, {3.825509489105534*^9, 
+   3.825509491005044*^9}, {3.8255095807423143`*^9, 
+   3.825509580893476*^9}},ExpressionUUID->"1b47023d-c3c6-47d0-93ae-\
 9f73851b3166"]
 },
 WindowSize->{1366, 1371},
@@ -3374,7 +4160,7 @@ WindowMargins->{{Automatic, 367}, {Automatic, 0}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
-ExpressionUUID->"f6bfab8f-6a01-4934-b16e-70a01ca46528"
+ExpressionUUID->"64453c57-6237-4148-a40c-56645a4d1fc9"
 ]
 (* End of Notebook Content *)
 
@@ -3387,7 +4173,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 137297, 3349, 24749, "Input",ExpressionUUID->"1b47023d-c3c6-47d0-93ae-9f73851b3166",
+Cell[558, 20, 170565, 4135, 25973, "Input",ExpressionUUID->"1b47023d-c3c6-47d0-93ae-9f73851b3166",
  InitializationCell->True]
 }
 ]
