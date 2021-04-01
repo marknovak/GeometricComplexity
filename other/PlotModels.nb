@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18739,        412]
-NotebookOptionsPosition[     18132,        393]
-NotebookOutlinePosition[     18558,        410]
-CellTagsIndexPosition[     18515,        407]
+NotebookDataLength[     18763,        412]
+NotebookOptionsPosition[     18156,        393]
+NotebookOutlinePosition[     18582,        410]
+CellTagsIndexPosition[     18539,        407]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,7 +37,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"models", "=", 
    RowBox[{"{", 
-    RowBox[{"BD", ",", "CM", ",", "TTA"}], "}"}]}], ";", " ", 
+    RowBox[{"H2", ",", " ", "SSS"}], "}"}]}], ";", " ", 
   RowBox[{"(*", " ", 
    RowBox[{
     RowBox[{
@@ -79,9 +79,9 @@ Cell[BoxData[{
    3.8254403233793488`*^9, 3.825440334834057*^9}, {3.825442639152569*^9, 
    3.825442644944038*^9}, {3.825443690343746*^9, 3.825443699606883*^9}, {
    3.8254485582576*^9, 3.8254485636323633`*^9}, {3.825448647581812*^9, 
-   3.825448648301482*^9}},
+   3.825448648301482*^9}, {3.825600702917457*^9, 3.8256007054121*^9}},
  CellLabel->
-  "In[8096]:=",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
+  "In[12333]:=",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
 
 Cell[CellGroupData[{
 
@@ -274,10 +274,10 @@ Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`Nmax$$ = 10, $CellContext`Nmin$$ = 
-    2, $CellContext`\[Alpha]$$ = 5.300000000000001, $CellContext`\[Beta]$$ = 
-    0.3, $CellContext`\[Delta]$$ = 0.5, $CellContext`\[Mu]$$ = 
-    1, $CellContext`\[CapitalPi]$$ = 4, $CellContext`\[Upsilon]$$ = 
-    2, $CellContext`\[Chi]$$ = 1.8, Typeset`show$$ = True, 
+    2, $CellContext`\[Alpha]$$ = 3.1, $CellContext`\[Beta]$$ = 
+    2., $CellContext`\[Delta]$$ = 0.5, $CellContext`\[Mu]$$ = 
+    1, $CellContext`\[CapitalPi]$$ = 6, $CellContext`\[Upsilon]$$ = 
+    2, $CellContext`\[Chi]$$ = 2.6, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
@@ -302,7 +302,7 @@ Cell[BoxData[
           Manipulate`Place[7], 
           Manipulate`Place[8], 
           Manipulate`Place[9]}}]], Manipulate`Dump`ThisIsNotAControl}}, 
-    Typeset`size$$ = {1048., {265., 272.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {1048., {211., 217.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      2, StandardForm, 
@@ -371,7 +371,7 @@ $CellContext`\[Chi]$$], $CellContext`d -> $CellContext`\[Delta]$$]], \
            Manipulate`Place[8], 
            Manipulate`Place[9]}}]}, "Options" :> {ControlPlacement -> Bottom},
        "DefaultOptions" :> {}],
-     ImageSizeCache->{1103., {349., 356.}},
+     ImageSizeCache->{1103., {295., 302.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -392,7 +392,7 @@ $CellContext`\[Chi]$$], $CellContext`d -> $CellContext`\[Delta]$$]], \
 }, Open  ]]
 },
 WindowSize->{1245, 1254},
-WindowMargins->{{Automatic, 500}, {Automatic, 0}},
+WindowMargins->{{259, Automatic}, {Automatic, 0}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
@@ -409,10 +409,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 3224, 63, 246, "Input",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
+Cell[558, 20, 3263, 63, 246, "Input",ExpressionUUID->"322c2fd7-9578-4640-9ccc-46cf9e55d50b"],
 Cell[CellGroupData[{
-Cell[3807, 87, 8487, 183, 558, "Input",ExpressionUUID->"81016124-60c3-4b51-aacf-8d7be495c46f"],
-Cell[12297, 272, 5819, 118, 728, "Output",ExpressionUUID->"b6154f99-196b-40d2-beb7-2c5fee625ce9"]
+Cell[3846, 87, 8487, 183, 558, "Input",ExpressionUUID->"81016124-60c3-4b51-aacf-8d7be495c46f"],
+Cell[12336, 272, 5804, 118, 620, "Output",ExpressionUUID->"b6154f99-196b-40d2-beb7-2c5fee625ce9"]
 }, Open  ]]
 }
 ]
