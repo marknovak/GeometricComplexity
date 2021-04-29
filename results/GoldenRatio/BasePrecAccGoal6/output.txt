@@ -1,9 +1,0 @@
-Launching kernels...
-
-DeleteFile::fdnfnd: Directory or file k1varH1.txt not found.
-
-DeleteFile::fdnfnd: Directory or file k1fixH1.txt not found.
-
-DeleteFile::fdnfnd: Directory or file k1varLR.txt not found.
-
-General::stop: Further output of DeleteFile::fdnfnd will be suppressed during this calculation.
