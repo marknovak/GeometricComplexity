@@ -1,6 +1,11 @@
 (* ::Package:: *)
 
 (* ::Input::Initialization:: *)
+Clear["Global`*"]
+
+AbundSeries="GoldenRatio";
+
+
 fisher[fun_,pars_]:=-D[Apply[fun,pars],{pars,2}]
 EFisher[FisherMatrix_,func_,PDistE_,\[CapitalNu]DistE_,subs_]:=
 Expectation[
@@ -27,62 +32,71 @@ Max[func/.subs/.P-> Pvals/.\[CapitalNu]-> \[CapitalNu]vals]<= Max[\[CapitalNu]va
 (* k=1 *)
 H1 = a \[CapitalNu] P T; (* Holling Type I *)
 LR = a \[CapitalNu] /P P T; (* Linear ratio-dependent *)
-BWL1 = a Sqrt[\[CapitalNu] P] T; (* Barbier,Wojcik & Loreau 2020 *)
+BWL1 = a Sqrt[\[CapitalNu] P] T; (* Barbier,Wojcik & Loreau 2021 *)
 
 (*k=2*)
 H2 = (a \[CapitalNu])/(1+a b \[CapitalNu]) P T; (* Holling Type II *)
 MM = (a \[CapitalNu])/(b+\[CapitalNu]) P T; (* Michaelis-Menten *)
 HV = a \[CapitalNu] /P^v P T; (* Hassell-Varley *)
+R = a \[CapitalNu]^u P T; (* Rosenzweig '71 *)
 AG = (a \[CapitalNu]/P)/(1+a b \[CapitalNu]/P) P T; (* Arditi-Ginzburg, Sutherland *)
 GI =  1/b (1-Exp[-a \[CapitalNu]]) P T ;
 GIA = 1/b (1-Exp[-a b \[CapitalNu]]) P T; (* Gause-Ivlev modified by Aldebert *)
 GB = 1/b (1-Exp[-a \[CapitalNu] / P]) P T; (* Gutierrez & Baumgaertner 1984 *)
 
 HT =1/b Tanh[a b \[CapitalNu]] P T; (* Jassby & Platt 1976 *)
-HT2 =1/b (Exp[2 a b \[CapitalNu] ]- 1)/(Exp[2 a b \[CapitalNu] ]+ 1) P T ; (* Jassby & Platt 1976 *)
+HTb =1/b (Exp[2 a b \[CapitalNu] ]- 1)/(Exp[2 a b \[CapitalNu] ]+ 1) P T ; (* Alternative parameterization of Jassby & Platt 1976 *)
 H3= (a \[CapitalNu]^2)/(1+a b \[CapitalNu]^2) P T; (* Holling Type III *)
 AGK = (a (\[CapitalNu]/P)^2)/(1+a b (\[CapitalNu]/P)^2) P T; (* Kratina et al. 2008 *)
 A1=Sqrt[(a \[CapitalNu])/(1+a b \[CapitalNu])]P T;(* Sqrt[(q c \[CapitalNu])/(d(1 + c h \[CapitalNu]))]P T *)  (* Abrams 1982 *)
-A3=Sqrt[\[CapitalNu]]/(2Sqrt[a]+ b Sqrt[\[CapitalNu]]) P T;(*Sqrt[\[CapitalNu]]/(2Sqrt[u \[Eta]]+ hSqrt[\[CapitalNu]]) P T *)(* Abrams 1982 *)
-SH = (a \[CapitalNu])/(b+(\[CapitalNu]^2) ) P T; (* Type IV Sokol & Howell 1987 *)
+A3=(a Sqrt[\[CapitalNu]])/(1+ a b Sqrt[\[CapitalNu]]) P T;(*Sqrt[\[CapitalNu]]/(2Sqrt[u \[Eta]]+ hSqrt[\[CapitalNu]]) P T *)(* Abrams 1982 *)
+SH =  (a \[CapitalNu])/(b+(\[CapitalNu]^2) ) P T; (* Sokol & Howell 1987 *)
+SHb = (a \[CapitalNu])/(1+a b (\[CapitalNu]^2) ) P T ; (* Holling-form Sokol & Howell 1987 *)
 
 
 (*k=3*)
 BD = (a \[CapitalNu])/(1+a b \[CapitalNu] + c (P-1)) P T; (* Beddington-DeAngelis *)
-CM = (a \[CapitalNu])/((1+a b \[CapitalNu])(1+c (P-1))) P T; (* Crowley-Martin *)
+CM = (a \[CapitalNu])/(1+a b \[CapitalNu]+c (P-1)+a b c \[CapitalNu](P-1)) P T; (* Crowley-Martin *)
 AA=(a \[CapitalNu]/P^v)/(1+a b \[CapitalNu]/P^v) P T; (* Arditi-Akcakaya *)
-BWL2 = a \[CapitalNu]^u P^v T; (* Barbier,Wojcik & Loreau 2020 *)
-H3R= (a \[CapitalNu]^u)/(1+a b \[CapitalNu]^u) P T; (* Holling Type III, Royoma 1977 *)
-A2=(a \[CapitalNu])/(1 + a b \[CapitalNu] + Sqrt[a \[CapitalNu] c(1+a b \[CapitalNu])]) P T; (* (a \[CapitalNu])/(1 + a h \[CapitalNu] + Sqrt[(a \[CapitalNu])/\[Epsilon](1+a h \[CapitalNu])]) P T*) (* Abrams 1982 *)
-HLB = (a \[CapitalNu]^2)/(1 + c \[CapitalNu] + a b \[CapitalNu]^2) P T; (* Hassell, Lawton & Beddington 1977 *)
-MH = (a \[CapitalNu])/(b + c \[CapitalNu] + (\[CapitalNu]^2) ) P T; (* Type IV (Monod-Haldane) Andrews 1968 *)
+BWL2 = a \[CapitalNu]^u P^v T; (* Barbier,Wojcik & Loreau 2021 *)
+H3R= (a \[CapitalNu]^u)/(1+a b \[CapitalNu]^u) P T; (* Holling Type III *)
+A2=(a \[CapitalNu])/(1 + a b \[CapitalNu] + Sqrt[a \[CapitalNu] c(1+a b \[CapitalNu])]) P T; (* Abrams 1982 *)
+S3= ((a \[CapitalNu])/(1+a b \[CapitalNu]))^u P T; (* new, generalized A1 *)
+S3b= ((a \[CapitalNu])/(b+ \[CapitalNu]))^u P T; (* new, generalized A1 in MM form*)
+HLB =(a \[CapitalNu]^2)/(1 + c \[CapitalNu] + a b \[CapitalNu]^2) P T; (* Hassell, Lawton & Beddington 1977 *)
+HLBb =(a \[CapitalNu]^2)/(b + \[CapitalNu] + c \[CapitalNu]^2) P T; (* Michaelis-Mentend-form of Hassell, Lawton & Beddington 1977 *)
+
+MH =(a \[CapitalNu])/(1 + a b \[CapitalNu] + c (\[CapitalNu]^2) ) P T;  (* Holling-form Monod-Haldane; Andrews 1968 *)
+MHb =(a \[CapitalNu])/(b +  \[CapitalNu] + c (\[CapitalNu]^2) ) P T;  (* Monod-Haldane; Andrews 1968 *)
+MHc =(a \[CapitalNu])/(b +  \[CapitalNu] + ((\[CapitalNu]^2)/c) ) P T;  (* original Monod-Haldane; Andrews 1968 *)
+To =(a \[CapitalNu])/(1 + a b \[CapitalNu] + c (\[CapitalNu]^3) ) P T;  (* Tostowaryk '72 *)
+FHM =(a \[CapitalNu] Exp[d \[CapitalNu]])/(1 + a b \[CapitalNu] Exp[d \[CapitalNu]] ) P T;  (* Fujii, Holling & Mace '86 *)
 W = 1/b (1-Exp[-a \[CapitalNu] / P^v]) P T; (* Watt 1959 *)
-TTA = (a \[CapitalNu])/(c P + Exp[- c P] + a b \[CapitalNu]) P T; (*aN/(P/P_0+exp(-P/P_0)+ahN) *) (* Tyutyunov, Titova & Arditi 2008 *)
+TTA = (a \[CapitalNu])/(1 + a b \[CapitalNu] + c P - (1-Exp[- c P]) ) P T;  (* Tyutyunov, Titova & Arditi 2008 *)
  SBB=(a (\[CapitalNu]/P^v)^2)/(1+a b (\[CapitalNu]/P^v)^2) P T;   (* Schenk, Bersier & Bacher 2005 *)
-SSS= (2 a \[CapitalNu])/(1 + a (b + c) \[CapitalNu] + Sqrt[(1+a (b+c) \[CapitalNu]) (1+a (b+c+4 b c) \[CapitalNu])]) P T; 
-(* Jeschke et al. 2002's model obtained using Citardauq Formula *)
+SSS=  (2 a \[CapitalNu])/(1 + a (b + c) \[CapitalNu] + Sqrt[(1+a (b+c) \[CapitalNu]) (1+a (b+c+4 b c) \[CapitalNu])]) P T; (* Jeschke et al. 2002 using citardauq Formula *)
 
 
 (*k=4*)
 BDOR = (a \[CapitalNu]^u)/(1+a b \[CapitalNu]^u + c (P-1)) P T;  (* Okuyama & Ruyle 2011 *)
-CMOR = (a \[CapitalNu]^u)/((1+a b \[CapitalNu]^u)(1+c (P-1))) P T;  (* Okuyama & Ruyle 2011 *)
+CMOR = (a \[CapitalNu]^u)/(1+a b \[CapitalNu]^u+c (P-1)+a b c \[CapitalNu]^u (P-1)) P T;  (* Okuyama & Ruyle 2011 *)
 AAOR=(a \[CapitalNu]^u/P^v)/(1+a b \[CapitalNu]^u/P^v) P T;  (* Okuyama & Ruyle 2011 *)
 SN1=(a \[CapitalNu])/(1+ a b \[CapitalNu] + c (P-1)+a b c (1-d) \[CapitalNu](P-1)) P T; (* Stouffer & Novak 2021 *)
-SN2=(a \[CapitalNu] (1+c(1-d) (P-1)))/(1+ a b \[CapitalNu] + c (P-1)+a b c (1-d) \[CapitalNu](P-1)) P T; (* Stouffer & Novak 2021 *)
+SN2=(a \[CapitalNu] (1+c (1-d) (P-1)))/(1+ a b \[CapitalNu] + c (P-1)+a b c (1-d) \[CapitalNu](P-1)) P T; (* new, but see Stouffer & Novak 2021 *)
 
 
 
 
 models = {
 H1,LR,BWL1,     
-H2,MM,HV,AG,GI, GIA, GB, HT,HT2, H3,AGK, A1, A3, SH,      
-BD, CM, AA, BWL2, H3R, A2, HLB, MH, W, TTA, SBB,SSS,    
+H2,MM,HV,R,AG,GI, GIA, GB, HT,HTb, H3,AGK, A1, A3, SH,SHb,      
+BD, CM, AA, BWL2, H3R, A2, S3,S3b,HLB,HLBb, MH,MHb, MHc,To, FHM,W, TTA, SBB,SSS,  
 BDOR, CMOR, AAOR, SN1, SN2};
 DumpSave["Models.mx",
 {models,
 H1,LR,BWL1,
-H2,MM,HV,AG,GI, GIA, GB, HT,HT2, H3, AGK,A1, A3, SH,      
-BD, CM, AA, BWL2, H3R, A2, HLB, MH, W, TTA,SBB,SSS,    
+H2,MM,HV,R,AG,GI, GIA, GB, HT,HTb, H3, AGK,A1, A3, SH,SHb, 
+BD, CM, AA, BWL2, H3R, A2, S3,S3b,HLB, HLBb,MH,MHb, MHc,To, FHM,W, TTA,SBB,SSS,
 BDOR, CMOR, AAOR, SN1, SN2}];
 
 
@@ -95,17 +109,19 @@ lLBWL1[a_]:=PoislL[BWL1]
 lLH2[a_,b_]:=PoislL[H2]
 lLMM[a_,b_]:=PoislL[MM]
 lLHV[a_,v_]:=PoislL[HV]
+lLR[a_,u_]:=PoislL[R]
 lLAG[a_,b_]:=PoislL[AG]
 lLGI[a_,b_]:=PoislL[GI]
 lLGIA[a_,b_]:=PoislL[GIA]
 lLGB[a_,b_]:=PoislL[GB]
 lLHT[a_,b_]:=PoislL[HT]
-lLHT2[a_,b_]:=PoislL[HT2]
+lLHTb[a_,b_]:=PoislL[HTb]
 lLH3[a_,b_]:=PoislL[H3]
 lLAGK[a_,b_]:=PoislL[AGK]
 lLA3[a_,b_]:=PoislL[A3]
 lLA1[a_,b_]:=PoislL[A1]
 lLSH[a_,b_]:=PoislL[SH]
+lLSHb[a_,b_]:=PoislL[SHb]
 
 lLBD[a_,b_,c_]:=PoislL[BD]
 lLCM[a_,b_,c_]:=PoislL[CM]
@@ -114,11 +130,18 @@ lLBWL2[a_,v_,u_]:=PoislL[BWL2]
 lLH3R[a_,b_,u_]:=PoislL[H3R]
 lLA2[a_,b_,c_]:=PoislL[A2]
 lLHLB[a_,b_,c_]:=PoislL[HLB]
+lLHLBb[a_,b_,c_]:=PoislL[HLBb]
 lLMH[a_,b_,c_]:=PoislL[MH]
+lLMHb[a_,b_,c_]:=PoislL[MHb]
+lLMHc[a_,b_,c_]:=PoislL[MHc]
+lLTo[a_,b_,c_]:=PoislL[To]
+lLFHM[a_,b_,d_]:=PoislL[FHM]
 lLW[a_,b_,v_]:=PoislL[W]
 lLTTA[a_,b_,c_]:=PoislL[TTA]
 lLSBB[a_,b_,v_]:=PoislL[SBB]
 lLSSS[a_,b_,c_]:=PoislL[SSS]
+lLS3[a_,b_,u_]:=PoislL[S3]
+lLS3b[a_,b_,u_]:=PoislL[S3b]
 
 lLBDOR[a_,b_,c_,u_]:=PoislL[BDOR]
 lLCMOR[a_,b_,c_,u_]:=PoislL[CMOR]
@@ -136,9 +159,10 @@ Module[
 \[CapitalNu]vals=\[CapitalNu]values,
 Pvals=Pvalues,
 Tval=1,
-NIntMethod= "LocalAdaptive" ,
+NIntMethod= {"LocalAdaptive","SingularityHandler"->Automatic},
+minRec=150,
 maxRec=500,
-accgoal=3,
+accgoal=3, 
 precgoal=3,
 FminMult=0.1,
 FmaxMult=1
@@ -153,9 +177,9 @@ ParmRange={
 {a,0,Infinity},
 {b,0,Infinity},
 {c,0,Infinity},
-{v,0,Infinity},
-{u,0,Infinity},
- {d,-Infinity,-1,0,1,Infinity} 
+{v,0,1,Infinity},
+{u,0,1,Infinity},
+{d,-Infinity,-1,0,1,Infinity} 
 };
 
 Which[
@@ -206,6 +230,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="MM",
@@ -219,6 +244,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="HV",
@@ -232,9 +258,23 @@ ParmRange[[4]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
-
+Model=="R",
+DetR=Det[EFisher[fisher[lLR,{a,u}],R,PDistE,\[CapitalNu]DistE,subs]];
+NIntR=
+Log[
+NIntegrate[
+SqrtDetEFlim[R,DetR,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[5]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion-> minRec,
+MaxRecursion->maxRec]]
+,
 Model=="H3",
 DetH3=Det[EFisher[fisher[lLH3,{a, b}],H3,PDistE,\[CapitalNu]DistE,subs]];
 NIntH3=
@@ -246,6 +286,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="AG",
@@ -259,6 +300,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="GI",
@@ -272,6 +314,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->0,
 MaxRecursion->maxRec]]
 ,
 Model=="GIA",
@@ -285,6 +328,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="GB",
@@ -298,6 +342,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->0,
 MaxRecursion->maxRec]]
 ,
 Model=="HT",
@@ -311,19 +356,21 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
-Model=="HT2",
-DetHT2=Det[EFisher[fisher[lLHT2,{a, b}],HT2,PDistE,\[CapitalNu]DistE,subs]];
-NIntHT2=
+Model=="HTb",
+DetHTb=Det[EFisher[fisher[lLHTb,{a, b}],HTb,PDistE,\[CapitalNu]DistE,subs]];
+NIntHTb=
 Log[
 NIntegrate[
-SqrtDetEFlim[HT2,DetHT2,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+SqrtDetEFlim[HTb,DetHTb,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
 ParmRange[[1]],
 ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="A3",
@@ -337,6 +384,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="AGK",
@@ -350,6 +398,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="A1",
@@ -363,6 +412,7 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="SH",
@@ -376,6 +426,21 @@ ParmRange[[2]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
+MaxRecursion->maxRec] ]
+,
+Model=="SHb",
+DetSHb=Det[EFisher[fisher[lLSHb,{a,b}],SHb,PDistE,\[CapitalNu]DistE,subs]];
+NIntSHb= 
+Log[
+NIntegrate[
+SqrtDetEFlim[SHb,DetSHb,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec] ]
 ,
 Model=="BD",
@@ -390,6 +455,7 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method-> NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="CM",
@@ -404,6 +470,7 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="AA",
@@ -418,6 +485,7 @@ ParmRange[[4]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="BWL2",
@@ -432,6 +500,7 @@ ParmRange[[5]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="H3R",
@@ -446,6 +515,7 @@ ParmRange[[5]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="A2",
@@ -460,6 +530,7 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="HLB",
@@ -474,6 +545,22 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
+MaxRecursion->maxRec]]
+,
+Model=="HLBb",
+DetHLBb=Det[EFisher[fisher[lLHLBb,{a,b,c}],HLBb,PDistE,\[CapitalNu]DistE,subs]];
+NIntHLBb=
+Log[
+NIntegrate[
+SqrtDetEFlim[HLBb,DetHLBb,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[3]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="MH",
@@ -488,6 +575,67 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
+MaxRecursion->maxRec]]
+,
+Model=="MHb",
+DetMHb=Det[EFisher[fisher[lLMHb,{a,b,c}],MHb,PDistE,\[CapitalNu]DistE,subs]];
+NIntMHb=
+Log[
+NIntegrate[
+SqrtDetEFlim[MHb,DetMHb,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[3]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion->minRec,
+MaxRecursion->maxRec]]
+,
+Model=="MHc",
+DetMHc=Det[EFisher[fisher[lLMHc,{a,b,c}],MHc,PDistE,\[CapitalNu]DistE,subs]];
+NIntMHc=
+Log[
+NIntegrate[
+SqrtDetEFlim[MHc,DetMHc,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[3]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion->minRec,
+MaxRecursion->maxRec]]
+,
+Model=="To",
+DetTo=Det[EFisher[fisher[lLTo,{a,b,c}],To,PDistE,\[CapitalNu]DistE,subs]];
+NIntTo=
+Log[
+NIntegrate[
+SqrtDetEFlim[To,DetTo,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[3]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion->minRec,
+MaxRecursion->maxRec]]
+,
+Model=="FHM",
+DetFHM=Det[EFisher[fisher[lLFHM,{a,b,d}],FHM,PDistE,\[CapitalNu]DistE,subs]];
+NIntFHM=
+Log[
+NIntegrate[
+SqrtDetEFlim[FHM,DetFHM,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[6]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="W",
@@ -502,6 +650,7 @@ ParmRange[[4]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="TTA",
@@ -516,6 +665,7 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="SBB",
@@ -530,6 +680,7 @@ ParmRange[[4]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion->minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="SSS",
@@ -544,6 +695,37 @@ ParmRange[[3]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
+MinRecursion-> minRec,
+MaxRecursion->maxRec]]
+,
+Model=="S3",
+DetS3=Det[EFisher[fisher[lLS3,{a,b,u}],S3,PDistE,\[CapitalNu]DistE,subs]];
+NIntS3=
+Log[
+NIntegrate[
+SqrtDetEFlim[S3,DetS3,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[5]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion-> minRec,
+MaxRecursion->maxRec]]
+,
+Model=="S3b",
+DetS3b=Det[EFisher[fisher[lLS3b,{a,b,u}],S3b,PDistE,\[CapitalNu]DistE,subs]];
+NIntS3b=
+Log[
+NIntegrate[
+SqrtDetEFlim[S3b,DetS3b,\[CapitalNu]vals,Pvals,subs,FminMult, FmaxMult], 
+ParmRange[[1]],
+ParmRange[[2]],
+ParmRange[[5]],
+AccuracyGoal->accgoal,
+PrecisionGoal->precgoal,
+Method->NIntMethod,
+MinRecursion-> minRec,
 MaxRecursion->maxRec]]
 ,
 Model=="BDOR",
@@ -559,7 +741,8 @@ ParmRange[[5]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method-> NIntMethod,
-MaxRecursion->maxRec]]
+MinRecursion->300,
+MaxRecursion->1000]]
 ,
 Model=="CMOR",
 DetCMOR=Det[EFisher[fisher[lLCMOR,{a,b,c,u}],CMOR,PDistE,\[CapitalNu]DistE,subs]];
@@ -574,7 +757,8 @@ ParmRange[[5]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
-MaxRecursion->maxRec]]
+MinRecursion->300,
+MaxRecursion->1000]]
 ,
 Model=="AAOR",
 DetAAOR=Det[EFisher[fisher[lLAAOR,{a,b,v,u}],AAOR,PDistE,\[CapitalNu]DistE,subs]];
@@ -589,7 +773,8 @@ ParmRange[[5]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method->NIntMethod,
-MaxRecursion->maxRec]]
+MinRecursion->300,
+MaxRecursion->1000]]
 ,
 Model=="SN1",
 DetSN1=Det[EFisher[fisher[lLSN1,{a, b,c, d}],SN1,PDistE,\[CapitalNu]DistE,subs]];
@@ -604,7 +789,8 @@ ParmRange[[6]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method-> NIntMethod,
-MaxRecursion->maxRec]]
+MinRecursion->300,
+MaxRecursion->1000]]
 ,
 Model=="SN2",
 DetSN2=Det[EFisher[
@@ -620,21 +806,10 @@ ParmRange[[6]],
 AccuracyGoal->accgoal,
 PrecisionGoal->precgoal,
 Method-> NIntMethod,
-MaxRecursion->maxRec]]
+MinRecursion->300,
+MaxRecursion->1000]]
 ] 
 ]
-(* Specify "GoldenRatio" or "Arithmetic" *) 
-AbundSeries="GoldenRatio";
-
-PreyMinLevels=5;
-PreyMaxLevelsVar=10; 
-PreyMaxLevelsFix=10;
-PredMinLevels=1;
-PredMaxLevelsVar=5; 
-PredMaxLevelsFix=4; 
-
-
-"/Users/marknovak/Git/aaaManuscripts/GeometricComplexity/mathematica/results/GoldenRatio"
 logGRSpace[a_,b_,n_]:=Round[GoldenRatio^Range[a,b,(b-a)/(n-1)]]
 
 PreyVals[n_,PreyMax_,AbundSeries_]:=
@@ -653,6 +828,29 @@ logGRSpace[0,Log[GoldenRatio,PredMax]+1,n],
 AbundSeries=="Arithmetic",
 Round[Range[1,Max[logGRSpace[0,Log[GoldenRatio,PredMax]+1,n]],(Max[logGRSpace[0,Log[GoldenRatio,PredMax]+1,n]]-1)/(n-1)]]
 ]]
+PreyMinLevels=5;
+PreyMaxLevelsVar=10; 
+PreyMaxLevelsFix=10;
+PredMinLevels=1;
+PredMaxLevelsVar=5; 
+PredMaxLevelsFix=4; 
+
+VarDesigns=Table[
+{PreyVals[i,Fibonacci[i],AbundSeries],
+PredVals[j,Fibonacci[j],AbundSeries]},
+{i, PreyMinLevels,PreyMaxLevelsVar},
+{j,PredMinLevels,PredMaxLevelsVar}
+];
+TableForm[VarDesigns];
+Export["DesignsVar.txt",TeXForm[VarDesigns]];
+FixDesigns=Table[
+{PreyVals[i,Fibonacci[PreyMaxLevelsFix],AbundSeries],
+PredVals[j,Fibonacci[PredMaxLevelsFix],AbundSeries]},
+{i, PreyMinLevels,PreyMaxLevelsFix},
+{j,PredMinLevels,PredMaxLevelsFix}
+];
+TableForm[FixDesigns];
+Export["DesignsFix.txt",TeXForm[FixDesigns]];
 ClearAll[GeomComp];
 GeomComp[
 ModelAbb_,
@@ -707,24 +905,6 @@ Model= ModelAbb]
 1]
 ]
 ]
-VarDesigns=Table[
-{PreyVals[i,Fibonacci[i],AbundSeries],
-PredVals[j,Fibonacci[j],AbundSeries]},
-{i, PreyMinLevels,PreyMaxLevelsVar},
-{j,PredMinLevels,PredMaxLevelsVar}
-];
-TableForm[VarDesigns]
-Export["DesignsVar.txt",TeXForm[VarDesigns]];
-TableForm[{{{{3, 4, 7, 13, 21}, {1}}, {{3, 4, 7, 13, 21}, {1, 2}}, {{3, 4, 7, 13, 21}, {1, 2, 3}}, {{3, 4, 7, 13, 21}, {1, 2, 3, 5}}, {{3, 4, 7, 13, 21}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 20, 34}, {1}}, {{3, 4, 7, 12, 20, 34}, {1, 2}}, {{3, 4, 7, 12, 20, 34}, {1, 2, 3}}, {{3, 4, 7, 12, 20, 34}, {1, 2, 3, 5}}, {{3, 4, 7, 12, 20, 34}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 20, 33, 55}, {1}}, {{3, 4, 7, 12, 20, 33, 55}, {1, 2}}, {{3, 4, 7, 12, 20, 33, 55}, {1, 2, 3}}, {{3, 4, 7, 12, 20, 33, 55}, {1, 2, 3, 5}}, {{3, 4, 7, 12, 20, 33, 55}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 20, 32, 54, 89}, {1}}, {{3, 4, 7, 12, 20, 32, 54, 89}, {1, 2}}, {{3, 4, 7, 12, 20, 32, 54, 89}, {1, 2, 3}}, {{3, 4, 7, 12, 20, 32, 54, 89}, {1, 2, 3, 5}}, {{3, 4, 7, 12, 20, 32, 54, 89}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1}}, {{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1, 2}}, {{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1, 2, 3}}, {{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1, 2, 3, 5}}, {{3, 4, 7, 12, 19, 32, 53, 87, 144}, {1, 2, 3, 5, 8}}}, {{{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3, 5}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3, 5, 8}}}}]
-FixDesigns=Table[
-{PreyVals[i,Fibonacci[PreyMaxLevelsFix],AbundSeries],
-PredVals[j,Fibonacci[PredMaxLevelsFix],AbundSeries]},
-{i, PreyMinLevels,PreyMaxLevelsFix},
-{j,PredMinLevels,PredMaxLevelsFix}
-];
-TableForm[FixDesigns]
-Export["DesignsFix.txt",TeXForm[FixDesigns]];
-TableForm[{{{{3, 8, 25, 76, 233}, {1}}, {{3, 8, 25, 76, 233}, {1, 5}}, {{3, 8, 25, 76, 233}, {1, 2, 5}}, {{3, 8, 25, 76, 233}, {1, 2, 3, 5}}}, {{{3, 6, 16, 39, 95, 233}, {1}}, {{3, 6, 16, 39, 95, 233}, {1, 5}}, {{3, 6, 16, 39, 95, 233}, {1, 2, 5}}, {{3, 6, 16, 39, 95, 233}, {1, 2, 3, 5}}}, {{{3, 6, 12, 25, 52, 110, 233}, {1}}, {{3, 6, 12, 25, 52, 110, 233}, {1, 5}}, {{3, 6, 12, 25, 52, 110, 233}, {1, 2, 5}}, {{3, 6, 12, 25, 52, 110, 233}, {1, 2, 3, 5}}}, {{{3, 5, 9, 18, 34, 65, 123, 233}, {1}}, {{3, 5, 9, 18, 34, 65, 123, 233}, {1, 5}}, {{3, 5, 9, 18, 34, 65, 123, 233}, {1, 2, 5}}, {{3, 5, 9, 18, 34, 65, 123, 233}, {1, 2, 3, 5}}}, {{{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1}}, {{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1, 5}}, {{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1, 2, 5}}, {{3, 5, 8, 14, 25, 43, 76, 133, 233}, {1, 2, 3, 5}}}, {{{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 5}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 5}}, {{3, 4, 7, 12, 19, 32, 52, 86, 141, 233}, {1, 2, 3, 5}}}}]
 varH1=GeomComp[Model="H1",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k1varH1.txt"]; Save["k1varH1.txt",varH1]
  
@@ -763,6 +943,12 @@ fixHV=GeomComp[Model="HV",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k2fixHV.txt"]; Save["k2fixHV.txt",fixHV]
 
 
+varR=GeomComp[Model="R",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k2varR.txt"]; Save["k2varR.txt",varR]
+fixR=GeomComp[Model="R",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k2fixR.txt"]; Save["k2fixR.txt",fixR]
+
+
 varAG=GeomComp[Model="AG",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k2varAG.txt"]; Save["k2varAG.txt",varAG]
 fixAG=GeomComp[Model="AG",Type="Fix",AbundSeries=AbundSeries];
@@ -793,11 +979,11 @@ Save["k2varHT.txt",varHT]
 fixHT=GeomComp[Model="HT",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k2fixHT.txt"]; Save["k2fixHT.txt",fixHT]
 
-varHT2=GeomComp[Model="HT2",Type="Var",AbundSeries=AbundSeries];
-DeleteFile["k2varHT2.txt"]; 
-Save["k2varHT2.txt",varHT2]
-fixHT2=GeomComp[Model="HT2",Type="Fix",AbundSeries=AbundSeries];
-DeleteFile["k2fixHT2.txt"]; Save["k2fixHT2.txt",fixHT2]
+varHTb=GeomComp[Model="HTb",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k2varHTb.txt"]; 
+Save["k2varHTb.txt",varHTb]
+fixHTb=GeomComp[Model="HTb",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k2fixHTb.txt"]; Save["k2fixHTb.txt",fixHTb]
 
 
 varH3=GeomComp[Model="H3",Type="Var",AbundSeries=AbundSeries];
@@ -808,10 +994,8 @@ DeleteFile["k2fixH3.txt"]; Save["k2fixH3.txt",fixH3]
 
 varAGK=GeomComp[Model="AGK",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k2varAGK.txt"]; Save["k2varAGK.txt",varAGK]
-DeleteFile::fdnfnd
 fixAGK=GeomComp[Model="AGK",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k2fixAGK.txt"]; Save["k2fixAGK.txt",fixAGK]
-DeleteFile::fdnfnd
 
 
 varA1=GeomComp[Model="A1",Type="Var",AbundSeries=AbundSeries];
@@ -830,6 +1014,12 @@ varSH=GeomComp[Model="SH",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k2varSH.txt"]; Save["k2varSH.txt",varSH]
 fixSH=GeomComp[Model="SH",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k2fixSH.txt"]; Save["k2fixSH.txt",fixSH]
+
+
+varSHb=GeomComp[Model="SHb",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k2varSHb.txt"]; Save["k2varSHb.txt",varSHb]
+fixSHb=GeomComp[Model="SHb",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k2fixSHb.txt"]; Save["k2fixSHb.txt",fixSHb]
 
 
 varBD=GeomComp[Model="BD",Type="Var",AbundSeries=AbundSeries];
@@ -874,10 +1064,47 @@ fixHLB=GeomComp[Model="HLB",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k3fixHLB.txt"]; Save["k3fixHLB.txt",fixHLB]
 
 
+varHLBb=GeomComp[Model="HLBb",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varHLBb.txt"]; Save["k3varHLBb.txt",varHLBb]
+fixHLBb=GeomComp[Model="HLBb",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixHLBb.txt"]; Save["k3fixHLBb.txt",fixHLBb]
+
+
 varMH=GeomComp[Model="MH",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k3varMH.txt"]; Save["k3varMH.txt",varMH]
 fixMH=GeomComp[Model="MH",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k3fixMH.txt"]; Save["k3fixMH.txt",fixMH]
+
+
+varMHb=GeomComp[Model="MHb",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varMHb.txt"]; Save["k3varMHb.txt",varMHb]
+fixMHb=GeomComp[Model="MHb",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixMHb.txt"]; Save["k3fixMHb.txt",fixMHb]
+DeleteFile::fdnfnd
+
+
+varMHc=GeomComp[Model="MHc",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varMHc.txt"]; Save["k3varMHc.txt",varMHc]
+DeleteFile::fdnfnd
+fixMHc=GeomComp[Model="MHc",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixMHc.txt"]; Save["k3fixMHc.txt",fixMHc]
+DeleteFile::fdnfnd
+
+
+varT=GeomComp[Model="To",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varT.txt"]; Save["k3varT.txt",varT]
+DeleteFile::fdnfnd
+fixT=GeomComp[Model="To",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixT.txt"]; Save["k3fixT.txt",fixT]
+DeleteFile::fdnfnd
+
+
+varFHM=GeomComp[Model="FHM",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varFHM.txt"]; Save["k3varFHM.txt",varFHM]
+DeleteFile::fdnfnd
+fixFHM=GeomComp[Model="FHM",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixFHM.txt"]; Save["k3fixFHM.txt",fixFHM]
+DeleteFile::fdnfnd
 
 
 varW=GeomComp[Model="W",Type="Var",AbundSeries=AbundSeries];
@@ -906,6 +1133,24 @@ DeleteFile["k3fixSSS.txt"];
 Save["k3fixSSS.txt",fixSSS]
 
 
+varS3=GeomComp[Model="S3",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varS3.txt"]; 
+Save["k3varS3.txt",varS3]
+fixS3=GeomComp[Model="S3",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixS3.txt"]; 
+Save["k3fixS3.txt",fixS3]
+
+
+varS3b=GeomComp[Model="S3b",Type="Var",AbundSeries=AbundSeries];
+DeleteFile["k3varS3b.txt"]; 
+Save["k3varS3b.txt",varS3b]
+DeleteFile::fdnfnd
+fixS3b=GeomComp[Model="S3b",Type="Fix",AbundSeries=AbundSeries];
+DeleteFile["k3fixS3b.txt"]; 
+Save["k3fixS3b.txt",fixS3b]
+DeleteFile::fdnfnd
+
+
 varBDOR=GeomComp[Model="BDOR",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k4varBDOR.txt"]; Save["k4varBDOR.txt",varBDOR]
 fixBDOR=GeomComp[Model="BDOR",Type="Fix",AbundSeries=AbundSeries];
@@ -927,6 +1172,8 @@ DeleteFile["k4fixAAOR.txt"]; Save["k4fixAAOR.txt",fixAAOR]
 varSN1=GeomComp[Model="SN1",Type="Var",AbundSeries=AbundSeries];
 DeleteFile["k4varSN1.txt"]; 
 Save["k4varSN1.txt",varSN1]
+$Aborted
+DeleteFile::fdnfnd
 fixSN1=GeomComp[Model="SN1",Type="Fix",AbundSeries=AbundSeries];
 DeleteFile["k4fixSN1.txt"]; 
 Save["k4fixSN1.txt",fixSN1]
