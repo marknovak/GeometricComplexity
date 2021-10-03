@@ -1,7 +1,7 @@
 # Geometric complexity
 This repository contains the code for the analyses of
 
-Novak & Stouffer (in review) *Geometric complexity and the information-theoretic comparison of functional-response models.* bioRxiv
+Novak & Stouffer (in review) *Geometric complexity and the information-theoretic comparison of functional-response models.* [bioRxiv](https://doi.org/10.1101/2021.07.31.454600)
 
 Please email Mark Novak (mark.novak@oregonstate.edu) and Daniel Stouffer (daniel.stouffer@canterbury.ac.nz) with any questions.
 
@@ -19,6 +19,8 @@ Additional notebooks:
 - _ParamComp_2ndTerm.nb_ produces Fig. 1 visualizing FIA's parametric complexity term as a function of sample size.
 - _GeomComp_H2MM.nb_ produces Fig. 2 comparing Holling and Michaelis-Menten formulations.
 - _Identifiability.nb_ produces Fig. S.1 visualizing the identifiability of all considered models as a function of experimental design.
+- _GeomComp_H2H3_binom.nb_ computes the geometric complexities of Rogers' Type II and Type III models assuming a binomial likelihood and non-replacement experimental designs.
+- _GeomComp_Plotting_binom.nb_ produces the figures corresponding to the ananlysis of Rogers' Type II and Type III models.
 
 Further notebooks in the [other](code/other) directory were used for visualizing or exploring specific functional-response models or were useful in the development of the primary analyses.
 
