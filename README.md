@@ -25,7 +25,7 @@ Additional notebooks:
 Further notebooks in the [other](code/other) directory were used for visualizing or exploring specific functional-response models or were useful in the development of the primary analyses.
 
 #### [docs](docs)
-The [docs](docs) directory contains _pdf_ printouts of the Mathematica notebook files.
+The [docs](docs) directory contains _pdf_ printouts of the main Mathematica notebook files.
 
 #### [figs](figs)
 The [figs](figs) directory contains all figures of the main text and supplementary materials, organized by design type.
