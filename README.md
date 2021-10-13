@@ -1,7 +1,7 @@
 # Geometric complexity
 This repository contains the code for the analyses of
 
-Novak & Stouffer (in review) *Geometric complexity and the information-theoretic comparison of functional-response models.* [bioRxiv](https://doi.org/10.1101/2021.07.31.454600)
+Novak & Stouffer (2021) *Geometric complexity and the information-theoretic comparison of functional-response models.* [Frontiers in Ecology and Evolution](https://www.frontiersin.org/articles/10.3389/fevo.2021.740362/) [bioRxiv](https://doi.org/10.1101/2021.07.31.454600)
 
 Please email Mark Novak (mark.novak@oregonstate.edu) and Daniel Stouffer (daniel.stouffer@canterbury.ac.nz) with any questions.
 
