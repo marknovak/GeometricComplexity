@@ -1,11 +1,17 @@
 # Geometric complexity
-This repository contains the code for the analyses of
+This repository contains the code for the analyses of:
 
-Novak & Stouffer (2021) *Geometric complexity and the information-theoretic comparison of functional-response models.* [Frontiers in Ecology and Evolution](https://www.frontiersin.org/articles/10.3389/fevo.2021.740362/) ([bioRxiv](https://doi.org/10.1101/2021.07.31.454600))
+_**Novak & Stouffer**_ (2021) *Geometric complexity and the information-theoretic comparison of functional-response models.* [Frontiers in Ecology and Evolution](https://www.frontiersin.org/articles/10.3389/fevo.2021.740362/) ([bioRxiv](https://doi.org/10.1101/2021.07.31.454600))
+
+_**Novak & Stouffer**_ (2024) *Corrigendum: Geometric complexity and the information-theoretic comparison of functional-response models.* [Frontiers in Ecology and Evolution](https://doi.org/10.3389/fevo.2024.1371112)
+
+The corrigendum corrects an error in our reformulation of the _Steady State Saturation_ (SSS) model of [Jeschke et al. (2002)](https://doi.org/10.1890/0012-9615(2002)072[0095:PFRDBH]2.0.CO;2).
+
+## Contact
 
 Please email Mark Novak (mark.novak@oregonstate.edu) and Daniel Stouffer (daniel.stouffer@canterbury.ac.nz) with any questions.
 
-## Organization
+## Repository organization
 All analyses were performed in Mathematica _v. 12.1.1.0_ using its notebook (_.nb_) format.
 
 #### [code](code/)
